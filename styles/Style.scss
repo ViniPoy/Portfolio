@@ -1,0 +1,324 @@
+* {
+    font-family: montserrat ;
+}
+
+$font-1: handlee;
+$main-color: #be1313;
+$text-color: #f2f2f2;
+$background-1: rgba(20, 20, 20, 0.7);
+$background-2: rgba(190, 19, 19, 0.5);
+$background-3: rgba(190, 19, 19);
+
+@mixin background-gradient {
+    background: linear-gradient(135deg, rgba(190, 19, 19), rgba(230, 40, 40));
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+@mixin background-glass {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body {
+    background-image: url(../images/3601908.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: $font-1;
+    font-size: 40px;
+}
+
+h3, h4 {
+    font-family: $font-1;
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, p {
+    cursor: default;
+}
+
+header {
+    background-color: $text-color;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    @media (max-width: 812px) {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+.logo {
+    color: $main-color;
+    flex: 1 1 auto;
+
+    h1 {
+    margin: 0;
+    font-size: 180%;
+  }
+}
+
+.inside {
+    flex: 2 1 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    @media (max-width: 436px) {
+        gap: 8px;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: $main-color;
+        border-radius: 20px;
+        display: inline-block;
+        padding: 10px;
+        font-family: $font-1;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: 436px) {
+            font-size: 0.8rem;
+        }
+
+        &:hover {
+            background-color: $background-3;
+            color: $text-color;
+        }
+    }
+
+}
+
+.outside {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    @media(max-width: 436px) {
+        gap: 50px;
+    }
+
+    &__link {
+        color: $main-color;
+        font-size: 200%;
+        padding: 10px;
+
+        @media(max-width: 436px) {
+            font-size: 170%;
+        }
+    }
+
+}
+
+.about {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    margin: 8% 0;
+
+    @media(max-width: 812px) {
+        flex-direction: column;
+    }
+
+    &__photo {
+        flex: 1 1 300px;
+        max-width: 500px;
+
+        &--logo {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__presentation {
+        @include background-glass();
+        color: $text-color;
+        text-align: center;
+        flex: 1 1 300px;
+        max-width: 500px;
+        padding: 15px;
+        border-radius: 25px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+
+            @media(max-width: 812px) {
+                transform: none;
+            }
+        }
+    }
+}
+
+.skills {
+    color: $text-color;
+    text-align: center;
+    @include background-gradient();
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10%;
+
+        &--category {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 25px;
+}
+
+.portfolio {
+    text-align: center;
+    align-items: center;
+    color: $text-color;
+
+    &__gallery{
+        display: flex;
+        justify-content: center;
+        gap: 8%;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 450px;
+        height: auto;
+        padding: 10px;
+        background-color: $background-2;
+        border-radius: 30px;
+        margin-bottom: 50px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $background-3;
+        }
+
+        &--image{
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 30px;
+        }
+
+        &--description {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        &--skills {
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        &--link {
+            text-decoration: none;
+            margin-top: auto;
+            max-width: min-content;
+            background-color: $text-color;
+            padding: 10px;
+            border-radius: 30px;
+            color: $main-color;
+            font-family: $font-1;
+            font-size: larger;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: darken($main-color, 10%);
+                color: $text-color;
+            }
+        }
+    }
+}
+
+.contact {
+    @include background-gradient();
+    text-align: center;
+    padding: 60px 20px;
+    color: $text-color;
+
+    &__title {
+        font-size: 2rem;
+        color: $main-color;
+        margin-bottom: 20px;
+    }
+
+    &__intro {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+
+    &__infos {
+        margin-bottom: 30px;
+
+        p {
+            margin: 10px 0;
+            font-size: 1rem;
+            i {
+                margin-right: 8px;
+                color: $text-color;
+            }
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: $text-color;
+        color: $main-color;
+        border-radius: 30px;
+        font-family: $font-1;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+
+        @media(max-width: 812px) {
+                font-size: 0.8rem;
+            }
+
+        &:hover {
+            background: darken($main-color, 10%);
+            color: $text-color;
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    color: $text-color;
+    background-color: $background-1;
+    margin: 0;
+    padding: 5px;
+}

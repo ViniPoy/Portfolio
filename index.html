@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Vincent Laurent, développeur web spécialisé en React, JavaScript et design responsive d'une part, et en Node.js, Api express d'autre part. Découvrez mes projets, compétences et expériences.">
+        <title>Portfolio de Vincent Laurent - Développeur Web | Tours</title>
+
+        <!-- Balises Open Graph pour les partages sur les réseaux sociaux -->
+        <meta property="og:title" content="Portfolio de Vincent Laurent - Développeur Web">
+        <meta property="og:description" content="Découvrez mes projets web et mes compétences en développement web.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.tonsite.com">
+        <meta property="og:image" content="https://www.tonsite.com/images/preview.jpg">
+        <meta property="og:locale" content="fr_FR">
+
+        <!-- Twitter Card pour un bel aperçu sur Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Portfolio de Vincent Laurent - Développeur Web">
+        <meta name="twitter:description" content="Découvrez mes projets web et mes compétences en développement web.">
+        <meta name="twitter:image" content="https://www.tonsite.com/images/preview.jpg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles/Style.css">
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Vincent Laurent",
+                "url": "https://www.tonsite.com",
+                "image": "https://www.tonsite.com/images/photo-profil.jpg",
+                "description": "Portfolio de Vincent Laurent, développeur web spécialisé en React, JavaScript et design responsive d'une part, et en Node.js, Api express d'autre part. Découvrez mes projets, compétences et expériences."
+                "jobTitle": "Développeur Web Fullstack",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Freelance" 
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Tours",
+                    "addressCountry": "FR"
+                }
+                "sameAs": [
+                    "https://www.linkedin.com/in/tonprofil",
+                    "https://github.com/ViniPoy",
+                    "https://twitter.com/tonprofil"
+                ],
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Vincent LAURENT</h1>
+            </div>
+            <nav class="inside">
+                <a class="inside__link" href="#about">À propos</a>
+                <a class="inside__link" href="#skills">Compétences</a>
+                <a class="inside__link" href="#portfolio">Portfolio</a>
+                <a class="inside__link" href="#contact">Contact</a>
+            </nav>
+            <nav class="outside">
+                <a class="outside__link" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="outside__link" href="https://github.com/ViniPoy" target="_blank" rel="noopener noreferrer" aria-label="Aller sur mon profil GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="about">
+                <div class="about__photo">
+                    <img class="about__photo--logo" src="/images/logo.webp" alt="logo">
+                </div>
+                <div class="about__presentation">
+                    <h2>Qui suis-je?</h2>
+                    <p>Développeur web fullstack basé en Indre-et-Loire, je m’appelle Vincent Laurent et j’ai 35 ans. Après m’être initié en autodidacte, j’ai choisi de 
+                        concrétiser ma passion pour le code par une formation diplômante, où j’ai consolidé mes compétences en HTML, CSS, JavaScript, React, Node.js, API Express et 
+                        bases de données NoSQL. Je me suis également formé à la gestion de projet en méthodologie agile et Scrum, convaincu qu’un projet réussi est avant tout un projet 
+                        bien structuré et collaboratif.</p>
+                    <p>Curieux, enthousiaste et légèrement perfectionniste, j’attache beaucoup d’importance à produire un code propre et organisé, au service d’applications à la fois 
+                        robustes et intuitives. En dehors du développement, je suis passionné de culture pop (jeux vidéo, mangas, cinéma, séries) et j’adore explorer des univers 
+                        musicaux variés, de l’électro au métal.</p>
+                    <p>Aujourd’hui, je mets cette polyvalence et cette énergie au service de projets web créatifs et sur mesure, que ce soit en freelance ou au sein d’une équipe.</p>
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Mes compétences</h2>
+                <div class="skills__cards">
+                    <div class="skills__cards--category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3 / SCSS</li>
+                            <li>JavaScript ES6+</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div class="skills__cards--category">
+                        <h3>Gestion de projet</h3>
+                        <ul>
+                            <li>Agile</li>
+                            <li>Scrum</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                    <div class="skills__cards--category">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>API REST</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skills__cards--category une">
+                        <h3>Autres</h3>
+                        <ul>
+                            <li>Design responsive</li>
+                            <li>Accessibilité</li>
+                            <li>Optimisation SEO et performances</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="portfolio">
+                <h2>Mes projets</h2>
+                <div class="portfolio__gallery">
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="/images/booki.webp" alt="image de la page d'accueil du site Booki">
+                        <h3>Page d'accueil de l'agence fictive Booki</h3>
+                        <p class="portfolio__card--description">Premier projet de formation consistant à développer la landing page d'une agence de voyage</p>
+                        <p class="portfolio__card--skills">HTML5<br>CSS3<br>Design responsive</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/booki-starter-code.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="/images/Sophie-Bluel.webp" alt="image de la page d'accueil du site de Sophie Bluel">
+                        <h3>Rendre un site dynamique avec JS</h3>
+                        <p class="portfolio__card--description">Projet de formation consistant à créer un mode administrateur d'un site pour permettre l'ajout de projet depuis une modale dans l'interface utilisateur, et ce grâce à javscript</p>
+                        <p class="portfolio__card--skills">JavaScript<br>Récupération de données utilisateur<br>Gestion d'évènements<br>Manipulation du DOM</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-3-Sophie-Bluel.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="/images/nina-carducci.github.io.webp" alt="image de la page d'accueil du site de Nina Carducci">
+                        <h3>Debug et optimisation d'un site de Photographe</h3>
+                        <p class="portfolio__card--description">Le but de cet exercice était de faire en sorte que les différents audit passé soient validés: audit lighthouse, résultat enrichit google, etc...</p>
+                        <p class="portfolio__card--skills">Optimisation des performances d'un site<br>Débug d'un site grâce aux Chrome DevTools<br>Création d'un cahier de recette</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-4-Nina-Carducci.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="/images/Kasa.webp" alt="Image de la page d'accueil de l'application web Kasa">
+                        <h3>Création une application web avec React</h3>
+                        <p class="portfolio__card--description">Ce projet me demandais de créer une application de location fictive avec React, ainsi que qulques animations avec SCSS</p>
+                        <p class="portfolio__card--skills">React<br>SCSS<br>Gestion de la navigation avec React Router</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-5-Kasa.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="/images/Mon-vieux-grimmoire.webp" alt="image du site Mon Vieux Grimmoire">
+                        <h3>Développement du backend d'un site internet</h3>
+                        <p class="portfolio__card--description">Projet de formation consistant à développer le backend d'un site: API express et base de donnée MongoDB NoSQL</p>
+                        <p class="portfolio__card--skills">API Express<br>MongoDB (NoSQL)<br>Mise en oeuvre d'opération CRUD<br>Sécurisation des utilisateur avec JSWBT</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-6-Backend.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="/images/Qwenta.webp" alt="image de la page d'accueil de MenuMaker by Qwenta">
+                        <h3>Planification du développement D'un site web</h3>
+                        <p class="portfolio__card--description">Ce projet consistait à simuler la planification de développement d'un site web avec une méthodologie AGILE SCRUM</p>
+                        <p class="portfolio__card--skills">Création de tableau Kanban<br>Mise en place d'une vfeille technologique<br>Création de dossier de spécifications techniques<br>Gestion de projet AGILE avec méthode SCRUM</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-Qwenta.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Et si on travaillait ensemble ?</h2>
+                <p class="contact__intro">
+                    Vous avez un projet ou une question ? 
+                    N’hésitez pas à me contacter, je serai ravi d’en discuter.
+                </p>
+                <div class="contact__infos">
+                    <p><i class="fa-solid fa-envelope"></i> vincentlaurent90@hotmail.fr</p>
+                    <p><i class="fa-solid fa-phone"></i> +33 6 83 30 85 05</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Indre-et-Loire, France</p>
+                </div>
+                <div class="contact__links">
+                    <a href="mailto:vincentlaurent90@hotmail.fr" class="contact__btn">M'envoyer un mail</a>
+                    <a href="https://www.linkedin.com/in/..." target="_blank" rel="noopener noreferrer" class="contact__btn">LinkedIn</a>
+                    <a href="https://github.com/ViniPoy" target="_blank" rel="noopener noreferrer" class="contact__btn">GitHub</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© Vincent Laurent - 2025</p>
+        </footer>
+    </body>
+</html>
