@@ -2,7 +2,7 @@
     font-family: montserrat ;
 }
 
-$font-1: handlee;
+$font-1: EB Garamond;
 $main-color: #be1313;
 $text-color: #f2f2f2;
 $background-1: rgba(20, 20, 20, 0.7);
@@ -146,6 +146,7 @@ header {
     &__presentation {
         @include background-glass();
         color: $text-color;
+        font-size: 1.1rem;
         text-align: center;
         flex: 1 1 300px;
         max-width: 500px;
