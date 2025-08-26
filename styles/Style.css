@@ -228,7 +228,7 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 .portfolio__card--link:hover {
-  background: #900e0e;
+  background: rgb(190, 19, 19);
   color: #f2f2f2;
 }
 
@@ -283,7 +283,7 @@ ul {
   }
 }
 .contact__btn:hover {
-  background: #900e0e;
+  background: rgb(143.6363636364, 14.3636363636, 14.3636363636);
   color: #f2f2f2;
 }
 
