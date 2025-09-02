@@ -174,6 +174,40 @@ ul {
   align-items: center;
   color: #f2f2f2;
 }
+.portfolio__filters {
+  display: flex;
+  justify-content: space-around;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.portfolio__filters--button {
+  font-family: EB Garamond;
+  font-size: larger;
+  font-weight: 800;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #be1313;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio__filters--button:hover {
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f2f2f2;
+  scale: 1.1;
+}
+.portfolio__filters--button-active {
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f2f2f2;
+  scale: 1.1;
+}
 .portfolio__gallery {
   display: flex;
   justify-content: center;
@@ -212,6 +246,12 @@ ul {
 .portfolio__card--skills {
   font-weight: 600;
   margin-bottom: 40px;
+}
+.portfolio__card--links-container {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 .portfolio__card--link {
   text-decoration: none;
@@ -283,7 +323,7 @@ ul {
   }
 }
 .contact__btn:hover {
-  background: rgb(143.6363636364, 14.3636363636, 14.3636363636);
+  background: none;
   color: #f2f2f2;
 }
 

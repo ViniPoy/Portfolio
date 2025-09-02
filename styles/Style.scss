@@ -193,14 +193,46 @@ ul {
     align-items: center;
     color: $text-color;
 
-    &__gallery{
+    &__filters {
+        display: flex;
+        justify-content: space-around;
+        max-width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+
+        &--button {
+            font-family: $font-1;
+            font-size: larger;
+            font-weight: 800;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 15px;
+            color: $main-color;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                @include background-glass();
+                color: $text-color;
+                scale: 1.1;
+            }
+        }
+
+        &--button-active {
+            @include background-glass();
+            color: $text-color;
+            scale: 1.1;
+        }
+    }
+
+    &__gallery {
         display: flex;
         justify-content: center;
         gap: 8%;
         flex-wrap: wrap;
     }
 
-    &__card{
+    &__card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,7 +248,7 @@ ul {
             background-color: $background-3;
         }
 
-        &--image{
+        &--image {
             width: 100%;
             height: auto;
             max-height: 200px;
@@ -233,6 +265,13 @@ ul {
         &--skills {
             font-weight: 600;
             margin-bottom: 40px;
+        }
+
+        &--links-container {
+            margin-top: auto;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
         }
 
         &--link {
@@ -310,7 +349,7 @@ ul {
             }
 
         &:hover {
-            background: darken($main-color, 10%);
+            background: none;
             color: $text-color;
         }
     }
