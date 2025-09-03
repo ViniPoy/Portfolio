@@ -77,7 +77,7 @@ async function postAdmin(email, password) {
             return null;
         }
     } catch (error) {
-        showError(error.message);
+        showMessage(error.message);
     }
 }
 

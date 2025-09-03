@@ -59,6 +59,8 @@
         </script>
         <script src="./scripts/appel-API.js" defer></script>
         <script src="./scripts/portfolio.js" defer></script>
+        <script src="./scripts/modal.js" defer></script>
+        <script src="./scripts/login.js" defer></script>
     </head>
     <body>
         <header>
@@ -70,6 +72,7 @@
                 <a class="inside__link" href="#skills">Compétences</a>
                 <a class="inside__link" href="#portfolio">Portfolio</a>
                 <a class="inside__link" href="#contact">Contact</a>
+                <button class="inside__link inside__connection">Connexion</button>
             </nav>
             <nav class="outside">
                 <a class="outside__link" href="https://linkedin.com/in/vincent-laurent-955536374" target="_blank" rel="noopener noreferrer" aria-label="Aller sur mon profil linkedin">
@@ -200,6 +203,22 @@
                     <a href="mailto:vincentlaurent90@hotmail.fr" class="contact__btn">M'envoyer un mail</a>
                     <a href="https://linkedin.com/in/vincent-laurent-955536374" target="_blank" rel="noopener noreferrer" class="contact__btn">LinkedIn</a>
                     <a href="https://github.com/ViniPoy" target="_blank" rel="noopener noreferrer" class="contact__btn">GitHub</a>
+                </div>
+            </section>
+            <section id="modal" class="modal">
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <button class="modal__header--close">✕</button>
+                    </div>
+                    <!-- Section connexion -->
+                    <div class="modal__section modal__login active">
+                        <h2>Connexion</h2>
+                        <form id="loginForm">
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="password" id="password" placeholder="Mot de passe" required>
+                            <button type="submit">Se connecter</button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
