@@ -8,6 +8,7 @@ getProject()
         projects = data;
         generateFilters();
         generateGallery(projects);
+        adminMode();
     })
     .catch(error => console.error("Erreur lors de la récupération des données :", error));
 
@@ -41,15 +42,16 @@ function generateGallery(projectToShow) {
     projectToShow.forEach((card) => {
         generateProject(card);
     });
+    adminMode();
 }
 
 function generateProject(card) {
     const cardElement = document.createElement("div");
-    cardElement.id = `project-${card.id}`;
+    cardElement.id = `project-${card._id}`;
     cardElement.classList.add("portfolio__card");
     
     const imageElement = document.createElement("img");
-    imageElement.src = card.image;
+    imageElement.src = card.imageUrl;
     imageElement.alt = card.alt;
     imageElement.classList.add("portfolio__card--image");
 

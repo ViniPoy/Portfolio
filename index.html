@@ -61,6 +61,7 @@
         <script src="./scripts/portfolio.js" defer></script>
         <script src="./scripts/modal.js" defer></script>
         <script src="./scripts/login.js" defer></script>
+        <script src="./scripts/user.js" defer></script>
     </head>
     <body>
         <header>
@@ -218,6 +219,62 @@
                             <input type="password" id="password" placeholder="Mot de passe" required>
                             <button type="submit">Se connecter</button>
                         </form>
+                    </div>
+                    <!-- Section ajout -->
+                    <div class="modal__section modal__add">
+                        <h2>Ajouter un projet</h2>
+                        <form id="addProjectForm" class="modal__form">
+                            <div class="modal__form--group">
+                                <label for="image" class="modal__form--label">Image</label>
+                                <input type="file" id="image" name="image" accept="image/*" class="modal__form--file" required>
+                                <label for="image" class="modal__form--file-button">Choisir un fichier</label>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="title" class="modal__form--label">Alt</label>
+                                <input type="text" id="alt" name="alt" required>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="title" class="modal__form--label">Titre</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="description" class="modal__form--label">Description</label>
+                                <textarea id="description" name="description" rows="4" required></textarea>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="skills" class="modal__form--label">Compétences</label>
+                                <input type="text" id="skills" name="skills" placeholder="ex: HTML, CSS, JS" required>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="link" class="modal__form--label">Lien GitHub</label>
+                                <input type="url" id="github" name="github" placeholder="https://github.com/..." required>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="link" class="modal__form--label">Lien Site</label>
+                                <input type="url" id="site" name="site" placeholder="https://..." required>
+                            </div>
+                            <div class="modal__form--group">
+                                <label for="category" class="modal__form--label">Catégorie</label>
+                                <select id="category" name="category" class="modal__form--select" required>
+                                    <option value="">Sélectionner une catégorie</option>
+                                    <option value="Formation">Formation</option>
+                                    <option value="Projet pro">Projet pro</option>
+                                    <option value="Projet perso">Projet perso</option>
+                                </select>
+                            </div>
+                            <div class="modal__form--actions">
+                                <button type="submit" class="modal__btn modal__btn--primary">Ajouter</button>
+                                <button type="button" class="modal__btn modal__btn--secondary" onclick="closeModal()">Annuler</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Section suppression -->
+                    <div class="modal__section modal__delete">
+                        <h2>Supprimer définitivement ce projet ?</h2>
+                        <div class="modal__delete--button">
+                            <button class="confirm-delete">Oui, supprimer</button>
+                            <button class="cancel-delete">Annuler</button>
+                        </div>
                     </div>
                 </div>
             </section>

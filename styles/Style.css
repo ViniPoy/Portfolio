@@ -277,6 +277,10 @@ ul {
   background: rgb(190, 19, 19);
   color: #f2f2f2;
 }
+.portfolio__card .delete-btn {
+  border: none;
+  cursor: pointer;
+}
 
 .contact {
   background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
@@ -351,7 +355,7 @@ ul {
   background-color: #fffef8;
   padding: 30px;
   width: 550px;
-  height: 650px;
+  height: 700px;
   margin: 100px auto;
   border-radius: 30px;
 }
@@ -383,7 +387,7 @@ ul {
   border-radius: 20px;
   border: 1px solid black;
 }
-.modal__section form button {
+.modal__section button {
   border-radius: 20px;
   display: inline-block;
   padding: 10px;
@@ -398,13 +402,80 @@ ul {
   border-radius: 60px;
   cursor: pointer;
 }
-.modal__section form button:hover {
+.modal__section button:hover {
   background-color: rgb(190, 19, 19);
   color: #f2f2f2;
+}
+.modal__delete {
+  flex-direction: column;
+  margin-top: 100px;
+}
+.modal__delete--button {
+  display: flex;
+  gap: 10px;
+  margin-top: 200px;
+}
+.modal__add h2 {
+  margin: -3rem;
+}
+.modal__form {
+  margin-top: 0;
+}
+.modal__form--group {
+  display: flex;
+  align-items: center;
+}
+.modal__form--group input, .modal__form--group textarea {
+  flex: 1;
+  padding: 0 1rem;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.modal__form--group textarea {
+  resize: none;
+}
+.modal__form--label {
+  width: 120px;
+  font-weight: bold;
+  font-family: EB Garamond;
+  margin-right: 1rem;
+}
+.modal__form--file {
+  display: none;
+}
+.modal__form--file-button {
+  flex: 1;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.modal__form--select {
+  flex: 1;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.modal__form--actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.modal__form--actions button {
+  width: auto;
+  padding: 1rem 2rem;
 }
 
 .overlay {
   position: fixed;
+  z-index: 2000;
   inset: 0;
   width: 100%;
   height: 100%;
