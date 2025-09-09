@@ -1,12 +1,14 @@
+import { API_URL } from "./config";
+
 async function getProject() {
-    const responseProject = await fetch("https://portfolio-backend-4kbf.onrender.com/api/portfolio");
+    const responseProject = await fetch(`${API_URL}/portfolio`);
     const project = await responseProject.json();
     return project;
 };
 
 async function postProject(data) {
     try {
-        const response = await fetch("https://portfolio-backend-4kbf.onrender.com/api/portfolio", {
+        const response = await fetch(`${API_URL}/portfolio`, {
             method: "POST",
             headers: { "Authorization" : `Bearer ${token}` },
             body: data
@@ -25,7 +27,7 @@ async function postProject(data) {
 
 async function putProject(data, id) {
     try {
-        const response = await fetch(`https://portfolio-backend-4kbf.onrender.com/api/portfolio/${id}`, {
+        const response = await fetch(`${API_URL}/portfolio/${id}`, {
             method: "PUT",
             headers: { 
                 "Authorization" : `Bearer ${token}`,
@@ -47,7 +49,7 @@ async function putProject(data, id) {
 
 async function deleteProject(id) {
     try {
-        const response = await fetch(`https://portfolio-backend-4kbf.onrender.com/api/portfolio/${id}`, {
+        const response = await fetch(`${API_URL}/portfolio/${id}`, {
             method: "DELETE",
             headers: { 
                 "Authorization" : `Bearer ${token}`,
@@ -65,7 +67,7 @@ async function deleteProject(id) {
 
 async function postAdmin(email, password) {
     try{
-        const response = await fetch("https://portfolio-backend-4kbf.onrender.com/api/auth/login", {
+        const response = await fetch(`${API_URL}/auth/login`, {
             method: "POST",
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify({ email, password })
