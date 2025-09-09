@@ -1,5 +1,3 @@
-import { API_URL } from "./config";
-
 async function getProject() {
     const responseProject = await fetch(`${API_URL}/portfolio`);
     const project = await responseProject.json();
