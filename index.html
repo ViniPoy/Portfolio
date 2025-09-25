@@ -3,22 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio de Vincent Laurent, développeur web spécialisé en React, JavaScript et design responsive d'une part, et en Node.js, Api express d'autre part. Découvrez mes projets, compétences et expériences.">
-        <title>Portfolio de Vincent Laurent - Développeur Web | Tours</title>
+        <meta name="description" content="VL Dev Web vous accompagne dans vos projets web. Spécialiste en React, JavaScript, Node.js et design responsive pour des sites modernes et performants.">
+        <title>VL Dev Web - Développement Web | Tours</title>
 
         <!-- Balises Open Graph pour les partages sur les réseaux sociaux -->
-        <meta property="og:title" content="Portfolio de Vincent Laurent - Développeur Web">
+        <meta property="og:title" content="Vl Dev Web - Développement web">
         <meta property="og:description" content="Découvrez mes projets web et mes compétences en développement web.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://vinipoy.github.io/Portfolio/">
-        <meta property="og:image" content="https://vinipoy.github.io/Portfolio/images/preview.jpg">
+        <meta property="og:url" content="https://vl-dev-web.fr">
+        <meta property="og:image" content="https://vl-dev-web.frimages/preview.jpg">
         <meta property="og:locale" content="fr_FR">
 
         <!-- Twitter Card pour un bel aperçu sur Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Portfolio de Vincent Laurent - Développeur Web">
+        <meta name="twitter:title" content="Vl Dev Web - Développement web">
         <meta name="twitter:description" content="Découvrez mes projets web et mes compétences en développement web.">
-        <meta name="twitter:image" content="https://vinipoy.github.io/Portfolio/images/preview.jpg">
+        <meta name="twitter:image" content="https://vl-dev-web.frimages/preview.jpg">
 
         <link rel="preload" as="image" href="images/logo2.webp">
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -36,29 +36,29 @@
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "Person",
-                "name": "Vincent Laurent",
-                "url": "https://vinipoy.github.io/Portfolio/",
-                "image": "https://vinipoy.github.io/Portfolio/images/photo-profil.jpg",
-                "description": "Portfolio de Vincent Laurent, développeur web spécialisé en React, JavaScript et design responsive d'une part, et en Node.js, Api express d'autre part. Découvrez mes projets, compétences et expériences.",
-                "jobTitle": "Développeur Web Fullstack",
-                "worksFor": {
-                    "@type": "Organization",
-                    "name": "Freelance" 
+                "@type": "Organization",
+                "name": "VL Dev Web",
+                "url": "https://vl-dev-web.fr",
+                "logo": "https://vl-dev-web.fr/images/logo.png",
+                "description": "VL Dev Web - Micro-entreprise de Vincent Laurent, spécialisée en développement web fullstack : React, JavaScript, Node.js, APIs et design responsive.",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Vincent Laurent",
+                    "sameAs": [
+                        "https://www.linkedin.com/in/vincent-laurent-955536374",
+                        "https://github.com/ViniPoy"
+                    ]
                 },
                 "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Tours",
                     "addressCountry": "FR"
                 }
-                "sameAs": [
-                    "https://www.linkedin.com/in/vincent-laurent-955536374",
-                    "https://github.com/ViniPoy"
-                ],
             }
         </script>
         <script src="./scripts/config.js" defer></script>
         <script src="./scripts/appel-API.js" defer></script>
+        <script src="./scripts/burger.js" defer></script>
         <script src="./scripts/portfolio.js" defer></script>
         <script src="./scripts/modal.js" defer></script>
         <script src="./scripts/login.js" defer></script>
@@ -66,8 +66,13 @@
     </head>
     <body>
         <header>
+            <button class="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="logo">
-                <h1>Vincent LAURENT</h1>
+                <h1>VL Dev Web</h1>
             </div>
             <nav class="inside">
                 <a class="inside__link" href="#about">À propos</a>

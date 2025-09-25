@@ -32,17 +32,44 @@ header {
   align-items: center;
   padding: 0 20px;
 }
-@media (max-width: 812px) {
-  header {
-    flex-direction: column;
-    padding: 10px;
-    height: auto;
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+@media (max-width: 922px) {
+  .burger {
+    display: block;
   }
+}
+.burger span {
+  margin: 0.2rem 0;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #be1313;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 .logo {
   color: #be1313;
-  flex: 1 1 auto;
 }
 .logo h1 {
   margin: 0;
@@ -50,14 +77,25 @@ header {
 }
 
 .inside {
-  flex: 2 1 auto;
   display: flex;
   justify-content: center;
   gap: 20px;
+  z-index: 1000;
 }
-@media (max-width: 436px) {
+@media (max-width: 922px) {
   .inside {
-    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    gap: 0;
+    transition: max-height 0.4s ease;
   }
 }
 .inside__link {
@@ -71,11 +109,6 @@ header {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 436px) {
-  .inside__link {
-    font-size: 0.8rem;
-  }
-}
 .inside__link:hover {
   background-color: rgb(190, 19, 19);
   color: #f2f2f2;
@@ -86,15 +119,20 @@ header {
   cursor: pointer;
 }
 
+@media (max-width: 922px) {
+  .inside-active {
+    max-height: 500px;
+  }
+}
+
 .outside {
-  flex: 1 1 auto;
   display: flex;
   justify-content: flex-end;
   gap: 10px;
 }
 @media (max-width: 436px) {
   .outside {
-    gap: 50px;
+    gap: 0px;
   }
 }
 .outside__link {
@@ -186,6 +224,11 @@ ul {
   max-width: 50%;
   margin: auto;
   margin-bottom: 30px;
+}
+@media (max-width: 922px) {
+  .portfolio__filters {
+    max-width: 100%;
+  }
 }
 .portfolio__filters--button {
   font-family: EB Garamond;
