@@ -68,12 +68,9 @@ header {
   transform: rotate(-45deg) translate(4px, -4px);
 }
 
-.logo {
-  color: #be1313;
-}
-.logo h1 {
-  margin: 0;
-  font-size: 180%;
+.logo img {
+  height: 60px;
+  padding-top: 3px;
 }
 
 .inside {
@@ -162,9 +159,14 @@ header {
 .about__photo {
   flex: 1 1 300px;
   max-width: 500px;
+  background: rgba(255, 255, 255, 0.02);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50% 50% 48% 52%/67% 68% 32% 33%;
 }
 .about__photo--logo {
-  width: 100%;
+  width: 500px;
   height: auto;
 }
 .about__presentation {

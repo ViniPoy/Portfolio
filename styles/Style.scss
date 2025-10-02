@@ -92,12 +92,10 @@ header {
 }
 
 .logo {
-    color: $main-color;
-
-    h1 {
-    margin: 0;
-    font-size: 180%;
-  }
+    & img {
+        height: 60px;
+        padding-top: 3px;
+    }
 }
 
 .inside {
@@ -187,9 +185,11 @@ z-index: 1000;
     &__photo {
         flex: 1 1 300px;
         max-width: 500px;
+        @include background-glass();
+        border-radius: 50% 50% 48% 52% / 67% 68% 32% 33%;
 
         &--logo {
-            width: 100%;
+            width: 500px;
             height: auto;
         }
     }
