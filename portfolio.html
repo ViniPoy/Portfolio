@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Développeur web freelance spécialisé dans la création de sites vitrines modernes et performants. J’accompagne entrepreneurs et petites entreprises pour renforcer leur présence en ligne."">
-        <title>VL Dev Web - Développeur Web Freelance | Tours</title>
+        <meta name="description" content="VL Dev Web vous accompagne dans vos projets web. Spécialiste en React, JavaScript, Node.js et design responsive pour des sites modernes et performants.">
+        <title>Réalisations | VL Dev Web</title>
         <link rel="icon" type="image/icon" href="images/LogoPicto.ico"
 
         <!-- Balises Open Graph pour les partages sur les réseaux sociaux -->
-        <meta property="og:title" content="Vl Dev Web - Développeur Web Freelance">
-        <meta property="og:description" content="Sites vitrines, solutions e-commerce, découvrez mes services de développement web freelance.">
+        <meta property="og:title" content="Réalisations | VL Dev Web">
+        <meta property="og:description" content="Découvrez mes projets web et mes compétences en développement web.">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://vl-dev-web.fr">
         <meta property="og:image" content="https://vl-dev-web.fr/images/Logo.webp">
@@ -17,8 +17,8 @@
 
         <!-- Twitter Card pour un bel aperçu sur Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Vl Dev Web - Développeur Web Freelance">
-        <meta name="twitter:description" content="Sites vitrines, solutions e-commerce, découvrez mes services de développement web freelance.">
+        <meta name="twitter:title" content="Réalisations | VL Dev Web">
+        <meta name="twitter:description" content="Découvrez mes projets web et mes compétences en développement web.">
         <meta name="twitter:image" content="https://vl-dev-web.fr/images/Logo.webp">
 
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -31,7 +31,7 @@
                 integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
                 crossorigin="anonymous" referrerpolicy="no-referrer" />
         </noscript>
-        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/portfolio.css">
 
         <script type="application/ld+json">
             {
@@ -59,6 +59,7 @@
         <script src="./scripts/config.js" defer></script>
         <script src="./scripts/appel-API.js" defer></script>
         <script src="./scripts/burger.js" defer></script>
+        <script src="./scripts/portfolio.js" defer></script>
         <script src="./scripts/modal.js" defer></script>
         <script src="./scripts/login.js" defer></script>
         <script src="./scripts/user.js" defer></script>
@@ -91,67 +92,16 @@
             </nav>
         </header>
         <main>
-            <section class="hero">
-                <img src="images/Logo.webp" alt="Logo de VL Dev Web">
-                <h1>Développeur web freelance <br/> Création de sites modernes et performants</h1>
-                <p>J’accompagne les entrepreneurs, associations et petites entreprises dans la création ou la refonte de sites web clairs, rapides et adaptés aux mobiles.</p>
-                <div class="hero__btn">
-                    <a href="#prestas" class="hero__btn--cta">Découvrir mes services</a>
-                    <a href="contact.html" class="hero__btn--cta">Me contacter</a>
-                </div>
-            </section>
-            <section id="prestas" class="prestas">
-                <h2>Des solutions web adaptés à vos besoins</h2>
-                <p>
-                    Que vous ayez besoin d’un site vitrine pour présenter votre activité, d'un site e-commerce pour vendre vos produits ou bien
-                    d’une refonte pour moderniser votre site existant ou d’un développement sur mesure, je propose des solutions adaptées et évolutives.
-                </p>
-                <div class="prestas__gallery">
-                    <div class="prestas__gallery--card">
-                        <h3>Création de site internet</h3>
-                        <p>Un site professionnel et attractif pour mettre en valeur votre activité, vendre vos créations, et attirer de nouveaux clients.</p>
-                    </div>
-                    <div class="prestas__gallery--card">
-                        <h3>Refonte & optimisation</h3>
-                        <p>Modernisation de votre site, amélioration du référencement (SEO) et des performances pour offrir une meilleure expérience à vos visiteurs.</p>
-                    </div>
-                    <div class="prestas__gallery--card">
-                        <h3>Développement su mesure</h3>
-                        <p>Des fonctionnalités spécifiques et personnalisées pour répondre aux besoins uniques de votre projet.</p>
-                    </div>
-                </div>
-            </section>
             <section id="portfolio" class="portfolio">
-                <h2 class="portfolio__title">Quelques projets réalisés</h2>
-                <p class="portfolio__presentation">Découvrez une sélection de sites et d’applications web que j’ai développés. Chaque projet est conçu avec soin pour répondre à des besoins précis.</p>
+                <h2>Mes projets</h2>
+                <div class="portfolio__filters"></div>
                 <div class="portfolio__gallery">
-                    <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/eclatnumerique.webp" alt="image de la page d'accueil du site éclat numérique">
-                        <h3 class="portfolio__card--title">Site internet de Karine Thualt, community manager</h3>
-                        <p class="portfolio__card--description">Premier projet professionnel : site vitrine créé avec React, design responsive et référencement optimisé.</p>
-                        <p class="portfolio__card--skills">React<br>SASS<br>Design responsive<br>SEO optimisé</p>
-                        <a class="portfolio__card--link" href="https://eclatnumerique.fr" target="_blank" rel="noopener noreferrer">Visiter le Site</a>
-                    </div>
-                    <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/nina-carducci.github.io2.webp" alt="image de la page d'accueil du site de Nina Carducci">
-                        <h3 class="portfolio__card--title">Debug et optimisation d'un site de Photographe</h3>
-                        <p class="portfolio__card--description">Refonte d'un site vitrine d'une photographe afin d'optimiser les performance, l'accessibilité et le référencement du site</p>
-                        <p class="portfolio__card--skills">Audit lighthouse<br>Optimisation des performances d'un site<br>Débug d'un site grâce aux Chrome DevTools<br>Création d'un cahier de recette</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-4-Nina-Carducci.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                    <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Mon-vieux-grimmoire2.webp" alt="image du site Mon Vieux Grimmoire">
-                        <h3 class="portfolio__card--title">Développement du backend d'un site internet</h3>
-                        <p class="portfolio__card--description">Création d'une API express sécurisée et mise en lien avec une base de donnée NoSQL afin de gérer l'ajout et la notation de livre sur un site internet.</p>
-                        <p class="portfolio__card--skills">API Express<br>MongoDB (NoSQL)<br>Mise en oeuvre d'opération CRUD<br>Sécurisation des utilisateur avec JSWBT</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-6-Backend.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
                     <!-- <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Kasa2.webp" alt="Image de la page d'accueil de l'application web Kasa">
-                        <h3>Création une application web avec React</h3>
-                        <p class="portfolio__card--description">Ce projet me demandait de créer une application de location fictive avec React, ainsi que quelques animations avec SCSS</p>
-                        <p class="portfolio__card--skills">React<br>SCSS<br>Gestion de la navigation avec React Router</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-5-Kasa.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <img class="portfolio__card--image" src="images/booki2.webp" alt="image de la page d'accueil du site Booki">
+                        <h3>Page d'accueil de l'agence fictive Booki</h3>
+                        <p class="portfolio__card--description">Premier projet de formation consistant à développer la landing page d'une agence de voyage</p>
+                        <p class="portfolio__card--skills">HTML5<br>CSS3<br>Design responsive</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/booki-starter-code.git" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                     <div class="portfolio__card">
                         <img class="portfolio__card--image" src="images/Sophie-Bluel2.webp" alt="image de la page d'accueil du site de Sophie Bluel">
@@ -161,6 +111,27 @@
                         <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-3-Sophie-Bluel.git" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                     <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="images/nina-carducci.github.io2.webp" alt="image de la page d'accueil du site de Nina Carducci">
+                        <h3>Debug et optimisation d'un site de Photographe</h3>
+                        <p class="portfolio__card--description">Le but de cet exercice était de faire en sorte que les différents audit passé soient validés: audit lighthouse, résultat enrichit google, etc...</p>
+                        <p class="portfolio__card--skills">Optimisation des performances d'un site<br>Débug d'un site grâce aux Chrome DevTools<br>Création d'un cahier de recette</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-4-Nina-Carducci.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="images/Kasa2.webp" alt="Image de la page d'accueil de l'application web Kasa">
+                        <h3>Création une application web avec React</h3>
+                        <p class="portfolio__card--description">Ce projet me demandait de créer une application de location fictive avec React, ainsi que quelques animations avec SCSS</p>
+                        <p class="portfolio__card--skills">React<br>SCSS<br>Gestion de la navigation avec React Router</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-5-Kasa.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
+                        <img class="portfolio__card--image" src="images/Mon-vieux-grimmoire2.webp" alt="image du site Mon Vieux Grimmoire">
+                        <h3>Développement du backend d'un site internet</h3>
+                        <p class="portfolio__card--description">Projet de formation consistant à développer le backend d'un site: API express et base de donnée MongoDB NoSQL</p>
+                        <p class="portfolio__card--skills">API Express<br>MongoDB (NoSQL)<br>Mise en oeuvre d'opération CRUD<br>Sécurisation des utilisateur avec JSWBT</p>
+                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-6-Backend.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                    <div class="portfolio__card">
                         <img class="portfolio__card--image" src="images/Qwenta2.webp" alt="image de la page d'accueil de MenuMaker by Qwenta">
                         <h3>Planification du développement D'un site web</h3>
                         <p class="portfolio__card--description">Ce projet consistait à simuler la planification de développement d'un site web avec une méthodologie AGILE SCRUM</p>
@@ -168,23 +139,6 @@
                         <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-Qwenta.git" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div> -->
                 </div>
-                <a href="portfolio.html" class="portfolio__btn">Voir toute mes réalisations</a>
-            </section>
-            <section class="about">
-                <h2>À propos de moi</h2>
-                <p>
-                    Je m'appelle Vincent, développeur web freelance basé en Indre et Loire. Passionné par le web et les nouvelles technologies, je mets mes compétences 
-                    au service des entrepreneurs, associations et petites structures qui souhaitent développer leur visibilité en ligne.
-                </p>
-                <p>
-                    Spécialisé en développement front-end et back-end, je travaille avec des technologies modernes (HTML, CSS, JavaScript, React, Node.js, etc.) 
-                    pour créer des sites web performants, sécurisés et évolutifs.
-                </p>
-            </section>
-            <section class="contact">
-                <h2>Discutons de votre projet</h2>
-                <p>Vous avez un projet en tête ou souhaitez simplement en savoir plus ? Je serai ravi d’échanger avec vous et de vous proposer une solution adaptée.</p>
-                <a href="contact.html">Contactez moi</a>
             </section>
             <section id="modal" class="modal">
                 <div class="modal__content">
@@ -260,9 +214,9 @@
             </section>
         </main>
         <footer>
-            <a href="mailto:contact@vl-dev-web.fr"><i class="fa-solid fa-envelope"> </i>contact@vl-dev-web.fr</a>
+            <a href="mailto:contact@vl-dev-web.fr"><i class="fa-solid fa-envelope"></i>contact@vl-dev-web.fr</a>
             <p class="copyright">© VL Dev Web - 2025</p>
-            <a href="tel:+33683308505"><i class="fa-solid fa-phone"> </i> +33 6 83 30 85 05</p>
+            <a href="tel:+33683308505"><i class="fa-solid fa-phone"></i> +33 6 83 30 85 05</p>
         </footer>
     </body>
 </html>

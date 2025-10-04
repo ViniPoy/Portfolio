@@ -1,0 +1,126 @@
+@use 'variables' as *;
+@use 'global';
+
+.hero {
+    @include background-glass();
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+    color: $text-color;
+    border-radius: 50px;
+
+    & p {
+        margin: 0 20px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 40px auto;
+
+        &--cta {
+            @include btn-cta();
+            background-color: $text-color;
+            font-size: 25px;
+
+            &:hover {
+                color: $text-color;
+                background-color: $background-2;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.prestas {
+    color: $text-color;
+    text-align: center;
+    @include background-gradient();
+
+    & p {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10%;
+
+        &--card {
+            width: 20%;
+            padding: 20px;
+            margin-bottom: 40px;
+            background-color: $background-1;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+
+            & h3 {
+                font-size: 35px;
+            }
+
+            & p {
+                font-size: 20px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 25px;
+}
+
+.about {
+    @include background-gradient();
+    color: $text-color;
+    text-align: center;
+
+    & h2 {
+        padding-top: 40px
+    }
+
+    & p {
+        width: 80%;
+        margin: 30px auto;
+        padding-bottom: 30px
+    }
+}
+
+.contact {
+    @include background-glass();
+    text-align: center;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 50px;
+    color: $text-color;
+
+    & h2 {
+        padding-bottom: 10px;
+    }
+
+    & p {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    & a {
+        @include btn-cta();
+        background-color: $text-color;
+        margin: 30px;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: $background-3;
+            color: $text-color;
+        }
+    }
+}

@@ -57,6 +57,7 @@ function generateProject(card) {
 
     const titleElement = document.createElement("h3");
     titleElement.textContent = card.title;
+    titleElement.classList.add("portfolio__card--title")
 
     const descriptionElement = document.createElement("p");
     descriptionElement.textContent = card.description;

@@ -1,0 +1,76 @@
+@use 'variables' as *;
+@use 'global';
+
+.about {
+    text-align: center;
+    color: $text-color;
+    
+    & ul {
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    &__intro {
+        @include background-glass();
+        width: 70%;
+        margin: 50px auto;
+        border-radius: 50px;
+        padding: 10px 50px;
+
+        & p {
+            width: 90%;
+            margin: 30px auto;
+        }
+    }
+
+    &__parcours {
+        @include background-gradient();
+
+        & p {
+            width: 80%;
+            margin: 30px auto;
+        }
+    }
+
+    &__compétences {
+        @include background-glass();
+        width: 70%;
+        margin: 50px auto;
+        border-radius: 50px;
+        padding: 10px 50px;
+
+        & p {
+            width: 90%;
+            margin: 30px auto;
+        }
+    }
+
+    &__why {
+        @include background-gradient();
+
+        & p {
+            width: 80%;
+            margin: 30px auto;
+        }
+    }
+
+    &__contact {
+        @include background-glass();
+        width: 70%;
+        margin: 50px auto;
+        border-radius: 50px;
+        padding: 10px 50px;
+
+        & a {
+            @include btn-cta();
+            background-color: $text-color;
+            margin-bottom: 10px;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $main-color;
+                color: $text-color;
+            }
+        }
+    }
+}
