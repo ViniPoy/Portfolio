@@ -29,7 +29,6 @@ async function putProject(data, id) {
             method: "PUT",
             headers: { 
                 "Authorization" : `Bearer ${token}`,
-                "Content-Type" : "application/json"
             },
             body: data
         });
@@ -69,6 +68,25 @@ async function postAdmin(email, password) {
             method: "POST",
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify({ email, password })
+        });
+        if (response.ok) {
+            return await response.json();
+        } else {
+            console.error("Erreur lors de l'envoie :", response.status);
+            return null;
+        }
+    } catch (error) {
+        showMessage(error.message);
+    }
+}
+
+
+async function sendContactMessage(data) {
+    try {
+        const response = await fetch(`${API_URL}/contact`, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data),
         });
         if (response.ok) {
             return await response.json();

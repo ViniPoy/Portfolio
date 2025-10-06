@@ -27,6 +27,15 @@ function adminMode() {
                 openModal("delete", projectId);
             });
             divButton.appendChild(deleteBtn);
+            const modifyBtn = document.createElement("button");
+            modifyBtn.innerText = "Modifier";
+            modifyBtn.classList.add("portfolio__card--link", "modify-btn");
+            modifyBtn.addEventListener("click", () => {
+                const projectId = card.id.replace("project-", "");
+                const project = projects.find(p => p._id === projectId);
+                openEditModal(project);
+            });
+            divButton.appendChild(modifyBtn);
         }
     })
 }

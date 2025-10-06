@@ -59,7 +59,7 @@
         <script src="./scripts/config.js" defer></script>
         <script src="./scripts/appel-API.js" defer></script>
         <script src="./scripts/burger.js" defer></script>
-        <script src="./scripts/portfolio.js" defer></script>
+        <script src="./scripts/contact.js" defer></script>
         <script src="./scripts/modal.js" defer></script>
         <script src="./scripts/login.js" defer></script>
         <script src="./scripts/user.js" defer></script>
@@ -103,7 +103,7 @@
                     </p>
                 </div>
                 <div class="contact__form-container">
-                    <form id="contactform" class="contact__form">
+                    <form id="contactForm" class="contact__form">
                         <div class="contact__form--group">
                             <label for="client-name">Prénom / Nom</label>
                             <input type="text" id="client-name" name="client-name" placeholder="Exemple : Jean Dupont" required>
@@ -122,6 +122,7 @@
                         </div>
                         <button class="contact__form--button" type="submit">Envoyer ma demande</button>
                     </form>
+                    <p id="formMessage" class="hidden"></p>
                     <p>Si vous préférez, vous pouvez aussi me contacter directement :</p>
                     <div class="contact__direct">
                         <a class="contact__direct--link" href="mailto:contact@vl-dev-web.fr"><i class="fa-solid fa-envelope"></i>contact@vl-dev-web.fr</a>

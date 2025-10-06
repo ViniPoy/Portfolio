@@ -18,8 +18,38 @@ function openModal(section, projectId = null) {
     modal.classList.add("open");
 }
 
+function openEditModal(project) {
+    openModal("add", project._id);
+
+    const form = document.getElementById("addProjectForm");
+    const titleElement = document.querySelector(".modal__add h2");
+    const submitButton = document.querySelector("button[type='submit']");
+    
+    titleElement.textContent = "Modifier un projet";
+    submitButton.textContent = "Modifier";
+    
+    form.alt.value = project.alt || "";
+    form.title.value = project.title || "";
+    form.description.value = project.description || "";
+    form.skills.value = project.skills ? project.skills.join(", ") : "";
+    form.github.value = project.link?.github || "";
+    form.site.value = project.link?.site || "";
+    form.category.value = project.category || "";
+}
+
 function closeModal() {
     modal.classList.remove("open");
+
+    const form = document.getElementById("addProjectForm");
+    const titleElement = document.querySelector(".modal__add h2");
+    const submitButton = form.querySelector("button[type='submit']");
+    const imagePreviewContainer = document.getElementById("imagePreviewContainer");
+
+    form.reset();
+    delete modal.dataset.projectId;
+
+    titleElement.textContent = "Ajouter un projet";
+    submitButton.textContent = "Ajouter";
 }
 
 function showMessage(message) {
@@ -75,6 +105,7 @@ const addProjectForm = document.getElementById("addProjectForm");
 addProjectForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
+    const projectId = modal.dataset.projectId;
     const skillsInput = addProjectForm.skills.value.trim();
     const skillsArray = skillsInput.split(/\s*,\s*|\n/).filter(s => s.length > 0);
     const githubInput = document.getElementById("github").value.trim();
@@ -93,14 +124,29 @@ addProjectForm.addEventListener("submit", async (event) => {
     formData.append("category", addProjectForm.category.value);
     formData.append("link", JSON.stringify(link));
 
-    const newProject = await postProject(formData);
-    if (newProject) {
-        projects.push(newProject);
-        generateGallery(projects);
-        closeModal();
-        showMessage("Projet ajouté !");
+    let result;
+    if (projectId) {
+        result = await putProject(formData, projectId);
+        if (result) {
+            const index = projects.findIndex(p => p._id === projectId);
+            projects[index] = result;
+            generateGallery(projects);
+            closeModal();
+            showMessage("Projet modifié avec succès !")
+        } else {
+            console.error("Erreur lors de l'ajout !")
+            showMessage("Erreur lors de la modification !")
+        }
     } else {
-        console.error("Erreur lors de l'ajout du projet");
-        showMessage("Erreur lors de l'ajout du projet !");
+        result = await postProject(formData);
+        if (result) {
+            projects.push(newProject);
+            generateGallery(projects);
+            closeModal();
+            showMessage("Projet ajouté !");
+        } else {
+            console.error("Erreur lors de l'ajout du projet");
+            showMessage("Erreur lors de l'ajout du projet !");
+        }
     }
 });

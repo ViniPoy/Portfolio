@@ -278,7 +278,7 @@ header .outside__link {
   background: rgb(190, 19, 19);
   color: #f2f2f2;
 }
-.portfolio__card .delete-btn {
+.portfolio__card .delete-btn, .portfolio__card .modify-btn {
   border: none;
   cursor: pointer;
 }
