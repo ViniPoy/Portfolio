@@ -245,7 +245,7 @@ header .outside__link {
   font-size: 30px;
 }
 .portfolio__card--description {
-  text-align: left;
+  text-align: center;
   margin-bottom: 40px;
   font-size: 20px;
 }
@@ -298,10 +298,7 @@ header .outside__link {
   transition: all 0.3s ease-in-out;
 }
 .portfolio__btn:hover {
-  background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #be1313;
   color: #f2f2f2;
   transform: scale(1.1);
 }
@@ -500,4 +497,93 @@ footer a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+
+.contact {
+  color: #f2f2f2;
+  text-align: center;
+}
+.contact__intro {
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 75%;
+  margin: 50px auto;
+  border-radius: 50px;
+  padding: 20px 50px;
+}
+.contact__form-container {
+  background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding: 30px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__form--group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.contact__form--group label {
+  width: 120px;
+}
+.contact__form--group input {
+  width: 600px;
+  margin: 20px auto;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding: 0 20px;
+}
+.contact__form--group textarea {
+  height: 200px;
+  width: 600px;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: none;
+  padding: 0 20px;
+}
+.contact__form--button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #be1313;
+  border-radius: 30px;
+  border: none;
+  font-family: EB Garamond;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 20px auto;
+}
+.contact__form--button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #f2f2f2;
+  background-color: #be1313;
+}
+.contact__direct {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.contact__direct--link {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+.contact__info {
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 75%;
+  margin: 50px auto;
+  border-radius: 50px;
+  padding: 20px 50px;
 }/*# sourceMappingURL=contact.css.map */

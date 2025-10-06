@@ -241,7 +241,7 @@ header {
         }
 
         &--description {
-            text-align: left;
+            text-align: center;
             margin-bottom: 40px;
             font-size: 20px;
         }
@@ -291,7 +291,7 @@ header {
         transition: all 0.3s ease-in-out;
 
         &:hover {
-            @include background-glass();
+            background-color: $main-color;
             color: $text-color;
             transform: scale(1.1);
         }

@@ -1,2 +1,86 @@
 @use 'variables' as *;
 @use 'global';
+
+.contact {
+    color: $text-color;
+    text-align: center;
+
+    &__intro {
+        @include background-glass();
+        width: 75%;
+        margin: 50px auto;
+        border-radius: 50px;
+        padding: 20px 50px;
+    }
+
+    &__form-container {
+        @include background-gradient();
+        padding: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--group {
+            display: flex; 
+            align-items: center;
+            gap: 20px;
+
+            & label {
+                width: 120px;
+            }
+
+            & input {
+                width: 600px;
+                margin: 20px auto;
+                height: 40px;
+                border-radius: 20px;
+                border: none;
+                padding: 0 20px;
+            }
+
+            & textarea {
+                height: 200px;
+                width: 600px;
+                margin: 20px auto;
+                border-radius: 20px;
+                border: none;
+                padding: 0 20px;
+            }
+        }
+
+        &--button {
+            @include btn-cta();
+            width: max-content;
+            margin: 20px auto;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                color: $text-color;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    &__direct {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
+        &--link {
+            text-decoration: none;
+            color: $text-color;
+        }
+    }   
+
+    &__info {
+        @include background-glass();
+        width: 75%;
+        margin: 50px auto;
+        border-radius: 50px;
+        padding: 20px 50px;
+    }
+}

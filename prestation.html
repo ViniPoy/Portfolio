@@ -72,7 +72,7 @@
                 <span></span>
             </button>
             <div class="logo">
-                <img src="images/LogoHorizontal.webp" alt="Logo de VL Dev Web">
+                <a href="index.html"><img src="images/LogoHorizontal.webp" alt="Logo de VL Dev Web"></a>
             </div>
             <nav class="inside">
                 <a class="inside__link" href="index.html">Accueil</a>
@@ -92,126 +92,103 @@
             </nav>
         </header>
         <main>
-            <section id="about" class="about">
-                <div class="about__photo">
-                    <img class="about__photo--logo" src="images/Logo.webp" alt="logo">
-                </div>
-                <div class="about__presentation">
-                    <h2>Qui suis-je?</h2>
-                    <p>Développeur web fullstack basé en Indre-et-Loire, je m’appelle Vincent Laurent et j’ai 35 ans. Après m’être initié en autodidacte, j’ai choisi de 
-                        concrétiser ma passion pour le code par une formation diplômante sur Openclassroom, où j’ai consolidé mes compétences en HTML, CSS, JavaScript, React, Node.js,
-                        API Express et bases de données NoSQL. Je me suis également formé à la gestion de projet en méthodologie agile et Scrum, convaincu qu’un projet réussi est avant 
-                        tout un projet bien structuré et collaboratif.</p>
-                    <p>Curieux, enthousiaste et légèrement perfectionniste, j’attache beaucoup d’importance à produire un code propre et organisé, au service d’applications à la fois 
-                        robustes et intuitives. En dehors du développement, je suis passionné de culture pop (jeux vidéo, mangas, cinéma, séries) et j’adore explorer des univers 
-                        musicaux variés, de l’électro au métal.</p>
-                    <p>Aujourd’hui, je mets cette polyvalence et cette énergie au service de projets web créatifs et sur mesure, que ce soit en freelance ou au sein d’une équipe.</p>
-                </div>
+            <section class="intro">
+                    <h1>Mes prestations de développeur web</h1>
+                    <p>
+                        Je conçois des sites internet modernes, rapides et adaptés à vos besoins.<br>
+                        Que vous souhaitiez créer votre premier site, refondre une version existante ou développer une fonctionnalité sur mesure, je vous accompagne de la conception 
+                        jusqu’à la mise en ligne.
+                    </p>
             </section>
-            <section id="skills" class="skills">
-                <h2>Mes compétences</h2>
-                <div class="skills__cards">
-                    <div class="skills__cards--category">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3 / SCSS</li>
-                            <li>JavaScript ES6+</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                    <div class="skills__cards--category">
-                        <h3>Gestion de projet</h3>
-                        <ul>
-                            <li>Agile</li>
-                            <li>Scrum</li>
-                            <li>Git</li>
-                            <li>Github</li>
-                        </ul>
-                    </div>
-                    <div class="skills__cards--category">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>API REST</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div class="skills__cards--category une">
-                        <h3>Autres</h3>
-                        <ul>
-                            <li>Design responsive</li>
-                            <li>Accessibilité</li>
-                            <li>Optimisation SEO et performances</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section id="portfolio" class="portfolio">
-                <h2>Mes projets</h2>
-                <div class="portfolio__filters"></div>
+            <section class="portfolio">
                 <div class="portfolio__gallery">
-                    <!-- <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/booki2.webp" alt="image de la page d'accueil du site Booki">
-                        <h3>Page d'accueil de l'agence fictive Booki</h3>
-                        <p class="portfolio__card--description">Premier projet de formation consistant à développer la landing page d'une agence de voyage</p>
-                        <p class="portfolio__card--skills">HTML5<br>CSS3<br>Design responsive</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/booki-starter-code.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <div class="portfolio__card">
+                        <h2 class="portfolio__card--title">Mettez votre activité en valeur avec un site professionnel</h2>
+                        <p class="portfolio__card--description">
+                            Je réalise des sites vitrines clairs, esthétiques et responsives, pour présenter votre activité, vos services et vos valeurs
+                        </p>
+                        <p class="portfolio__card--description">
+                            L’objectif : <strong>renforcer votre crédibilité</strong> et <strong>attirer de nouveaux clients</strong>, tout en vous laissant la main sur les contenus.
+                        </p>
+                        <h3 class="portfolio__card--subtitle">Ce que comprend la prestation :</h3>
+                        <p class="portfolio__card--skills">
+                            Conception personnalisée et adaptée à votre identité visuelle<br>
+                            Développement responsive (mobile, tablette, ordinateur)<br>
+                            Optimisation SEO de base (balises, performances, accessibilité)<br>
+                            Mise en ligne et accompagnement à la prise en main
+                        </p>
                     </div>
                     <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Sophie-Bluel2.webp" alt="image de la page d'accueil du site de Sophie Bluel">
-                        <h3>Rendre un site dynamique avec JS</h3>
-                        <p class="portfolio__card--description">Projet de formation consistant à créer un mode administrateur d'un site pour permettre l'ajout de projet depuis une modale dans l'interface utilisateur, et ce grâce à javscript</p>
-                        <p class="portfolio__card--skills">JavaScript<br>Récupération de données utilisateur<br>Gestion d'évènements<br>Manipulation du DOM</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-3-Sophie-Bluel.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <h2 class="portfolio__card--title">Développez votre activité en ligne avec une boutique moderne et performante.</h2>
+                        <p class="portfolio__card--description">
+                            Je conçois des sites e-commerce adaptés à vos besoins, qu’il s’agisse d’une petite boutique ou d’un projet plus ambitieux.
+                        </p>
+                        <p class="portfolio__card--description">
+                            L'objectif : vous permettre de <strong>vendre vos produits simplement</strong>, avec une <strong>interface claire</strong> et 
+                            <strong>un parcours client fluide</strong>.
+                        </p>
+                        <h3 class="portfolio__card--subtitle">Ce que comprend la prestation :</h3>
+                        <p class="portfolio__card--skills">
+                            Création de la boutique en ligne et configuration des produits<br>
+                            Intégration des systèmes de paiement (Stripe, PayPal, etc.)<br>
+                            Gestion des stocks, commandes et livraisons<br>
+                            Design responsive et cohérent avec votre image de marque<br>
+                            Optimisation de l’expérience utilisateur (UX) et du référencement
+                        </p>
                     </div>
                     <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/nina-carducci.github.io2.webp" alt="image de la page d'accueil du site de Nina Carducci">
-                        <h3>Debug et optimisation d'un site de Photographe</h3>
-                        <p class="portfolio__card--description">Le but de cet exercice était de faire en sorte que les différents audit passé soient validés: audit lighthouse, résultat enrichit google, etc...</p>
-                        <p class="portfolio__card--skills">Optimisation des performances d'un site<br>Débug d'un site grâce aux Chrome DevTools<br>Création d'un cahier de recette</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-4-Nina-Carducci.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <h2 class="portfolio__card--title">Modernisez et améliorez votre site actuel</h2>
+                        <p class="portfolio__card--description">
+                            Votre site est vieillissant, lent ou difficile à mettre à jour ?<br>
+                            Je vous aide à repenser son design, optimiser son référencement et améliorer ses performances.
+                        </p>
+                        <p class="portfolio__card--description">
+                            L’objectif : <strong>offrir une meilleure expérience utilisateur</strong> et <strong>gagner en visibilité.</strong>
+                        </p>
+                        <h3 class="portfolio__card--subtitle">Ce que comprend la prestation :</h3>
+                        <p class="portfolio__card--skills">
+                            Audit du site existant (technique, design, SEO)<br>
+                            Refonte graphique et structurelle<br>
+                            Amélioration des performances (vitesse, poids des médias, code)<br>
+                            Accompagnement sur la mise à jour des contenus
+                        </p>
                     </div>
                     <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Kasa2.webp" alt="Image de la page d'accueil de l'application web Kasa">
-                        <h3>Création une application web avec React</h3>
-                        <p class="portfolio__card--description">Ce projet me demandait de créer une application de location fictive avec React, ainsi que quelques animations avec SCSS</p>
-                        <p class="portfolio__card--skills">React<br>SCSS<br>Gestion de la navigation avec React Router</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-5-Kasa.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <h2 class="portfolio__card--title">Donnez vie à vos idées spécifiques</h2>
+                        <p class="portfolio__card--description">
+                            Besoin d’une fonctionnalité précise ou d’un outil interne ?<br>
+                            Je conçois des solutions sur mesure avec des technologies modernes (Node.js, Express, MongoDB, React…).
+                        </p>
+                        <p class="portfolio__card--description">
+                            L’objectif : <strong>créer un outil adapté à votre façon de travailler</strong> et <strong>faire gagner du temps</strong> à votre entreprise.
+                        </p>
+                        <h3 class="portfolio__card--subtitle">Ce que comprend la prestation :</h3>
+                        <p class="portfolio__card--skills">
+                            Étude du besoin et rédaction d’un cahier des charges simplifié<br>
+                            Développement backend et/ou frontend sur mesure<br>
+                            Tests et validation des fonctionnalités<br>
+                            Mise en production sécurisée
+                        </p>
                     </div>
                     <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Mon-vieux-grimmoire2.webp" alt="image du site Mon Vieux Grimmoire">
-                        <h3>Développement du backend d'un site internet</h3>
-                        <p class="portfolio__card--description">Projet de formation consistant à développer le backend d'un site: API express et base de donnée MongoDB NoSQL</p>
-                        <p class="portfolio__card--skills">API Express<br>MongoDB (NoSQL)<br>Mise en oeuvre d'opération CRUD<br>Sécurisation des utilisateur avec JSWBT</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-6-Backend.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <h2 class="portfolio__card--title">Gardez votre site en bonne santé dans le temps</h2>
+                        <p class="portfolio__card--description">
+                            Je propose également un accompagnement technique après la mise en ligne :petites évolutions, corrections, mises à jour de sécurité ou conseils d’optimisation.
+                        </p>
+                        <h3 class="portfolio__card--subtitle">Ce que comprend la prestation :</h3>
+                        <p class="portfolio__card--skills">
+                            Suivi et corrections techniques<br>
+                            Mises à jour du contenu ou du code<br>
+                            Conseils en SEO et performance<br>
+                            Intervention ponctuelle ou contrat de maintenance régulier
+                        </p>
                     </div>
-                    <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Qwenta2.webp" alt="image de la page d'accueil de MenuMaker by Qwenta">
-                        <h3>Planification du développement D'un site web</h3>
-                        <p class="portfolio__card--description">Ce projet consistait à simuler la planification de développement d'un site web avec une méthodologie AGILE SCRUM</p>
-                        <p class="portfolio__card--skills">Création de tableau Kanban<br>Mise en place d'une veille technologique<br>Création de dossier de spécifications techniques<br>Gestion de projet AGILE avec méthode SCRUM</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-Qwenta.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div> -->
                 </div>
             </section>
-            <section id="contact" class="contact">
-                <h2>Et si on travaillait ensemble ?</h2>
-                <p class="contact__intro">
-                    Vous avez un projet ou une question ? 
-                    N’hésitez pas à me contacter, je serai ravi d’en discuter.
-                </p>
-                <div class="contact__infos">
-                    <p><i class="fa-solid fa-envelope"></i>contact@vl-dev-web.fr</p>
-                    <p><i class="fa-solid fa-phone"></i> +33 6 83 30 85 05</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Indre-et-Loire, France</p>
-                </div>
-                <div class="contact__links">
-                    <a href="mailto:contact@vl-dev-web.fr" class="contact__btn">M'envoyer un mail</a>
-                    <a href="https://linkedin.com/in/vincent-laurent-955536374" target="_blank" rel="noopener noreferrer" class="contact__btn">LinkedIn</a>
-                    <a href="https://github.com/ViniPoy" target="_blank" rel="noopener noreferrer" class="contact__btn">GitHub</a>
-                </div>
+            <section class="contact">
+                <h2>Vous avez un projet ?</h2>
+                <p>Discutons ensemble de la solution la plus adaptée à vos besoins et à votre budget.</p>
+                <a href="contact.html" class="contact__btn">Demander un devis gratuit</a>
             </section>
             <section id="modal" class="modal">
                 <div class="modal__content">
