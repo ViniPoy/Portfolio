@@ -23,7 +23,7 @@ function openEditModal(project) {
 
     const form = document.getElementById("addProjectForm");
     const titleElement = document.querySelector(".modal__add h2");
-    const submitButton = document.querySelector("button[type='submit']");
+    const submitButton = document.querySelector(".modal__btn--primary");
     
     titleElement.textContent = "Modifier un projet";
     submitButton.textContent = "Modifier";
@@ -42,7 +42,7 @@ function closeModal() {
 
     const form = document.getElementById("addProjectForm");
     const titleElement = document.querySelector(".modal__add h2");
-    const submitButton = form.querySelector("button[type='submit']");
+    const submitButton = form.querySelector(".modal__btn--primary");
     const imagePreviewContainer = document.getElementById("imagePreviewContainer");
 
     form.reset();
