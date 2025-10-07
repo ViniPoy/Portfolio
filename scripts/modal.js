@@ -140,7 +140,7 @@ addProjectForm.addEventListener("submit", async (event) => {
     } else {
         result = await postProject(formData);
         if (result) {
-            projects.push(newProject);
+            projects.push(result);
             generateGallery(projects);
             closeModal();
             showMessage("Projet ajouté !");
