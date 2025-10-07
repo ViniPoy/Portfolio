@@ -17,17 +17,37 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 60px;
 }
+@media (max-width: 650px) {
+  h1 {
+    font-size: 50px;
+  }
+}
 
 h2 {
   font-size: 50px;
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 h3 {
   font-size: 40px;
 }
+@media (max-width: 650px) {
+  h3 {
+    font-size: 30px;
+  }
+}
 
 p {
   font-size: 30px;
+}
+@media (max-width: 650px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 h1, h2, h3, h4, p {
@@ -179,7 +199,9 @@ header .outside__link {
 }
 @media (max-width: 922px) {
   .portfolio__filters {
-    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 }
 .portfolio__filters--button {
@@ -193,6 +215,8 @@ header .outside__link {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
 }
 .portfolio__filters--button:hover {
   background: rgba(255, 255, 255, 0);
@@ -201,6 +225,7 @@ header .outside__link {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
   scale: 1.1;
+  cursor: pointer;
 }
 .portfolio__filters--button-active {
   background: rgba(255, 255, 255, 0);
@@ -259,6 +284,13 @@ header .outside__link {
   display: flex;
   gap: 10px;
   justify-content: center;
+}
+@media (max-width: 922px) {
+  .portfolio__card--links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 .portfolio__card--link {
   text-decoration: none;
@@ -498,17 +530,29 @@ footer a {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 922px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .hero {
   background: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 60%;
+  width: 70%;
   margin: 50px auto;
+  padding: 0 40px;
   text-align: center;
   color: #f2f2f2;
   border-radius: 50px;
+}
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 42px;
+  }
 }
 .hero p {
   margin: 0 20px;
@@ -518,6 +562,14 @@ footer a {
   justify-content: space-around;
   width: 80%;
   margin: 40px auto;
+}
+@media (max-width: 1024px) {
+  .hero__btn {
+    flex-direction: column;
+    gap: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 .hero__btn--cta {
   display: inline-block;
@@ -538,6 +590,11 @@ footer a {
   background-color: rgba(190, 19, 19, 0.5);
   transform: scale(1.1);
 }
+@media (max-width: 450px) {
+  .hero__btn--cta {
+    font-size: 22px;
+  }
+}
 
 .prestas {
   color: #f2f2f2;
@@ -551,15 +608,19 @@ footer a {
 }
 .prestas__gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10%;
+  gap: 5%;
 }
 .prestas__gallery--card {
-  width: 20%;
+  width: 300px;
+  height: 400px;
   padding: 20px;
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(20, 20, 20, 0.7);
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
@@ -603,15 +664,12 @@ ul {
   text-align: center;
   width: 70%;
   margin: 30px auto;
+  padding: 0 40px;
   border-radius: 50px;
   color: #f2f2f2;
 }
 .contact h2 {
   padding-bottom: 10px;
-}
-.contact p {
-  width: 90%;
-  margin: 20px auto;
 }
 .contact a {
   display: inline-block;

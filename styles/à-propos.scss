@@ -8,6 +8,12 @@
     & ul {
         list-style-type: none;
         font-size: 20px;
+        padding: 0;
+        margin: 0;
+
+        @media (max-width: 650px) {
+            font-size: 15px;
+        } 
     }
 
     &__intro {
@@ -17,10 +23,10 @@
         border-radius: 50px;
         padding: 10px 50px;
 
-        & p {
-            width: 90%;
-            margin: 30px auto;
-        }
+        @media (max-width: 650px) {
+            width: 65%;
+            padding: 10px 30px;
+        }         
     }
 
     &__parcours {
@@ -39,14 +45,14 @@
         border-radius: 50px;
         padding: 10px 50px;
 
-        & p {
-            width: 90%;
-            margin: 30px auto;
-        }
+        @media (max-width: 650px) {
+            width: 65%;
+        } 
     }
 
     &__why {
         @include background-gradient();
+        padding-bottom: 30px;
 
         & p {
             width: 80%;
@@ -72,5 +78,9 @@
                 color: $text-color;
             }
         }
+
+        @media (max-width: 650px) {
+            width: 65%;
+        } 
     }
 }

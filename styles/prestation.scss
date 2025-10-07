@@ -5,9 +5,20 @@
     @include background-glass();
     width: 80%;
     margin: 50px auto;
+    padding: 0 40px;
     color: $text-color;
     text-align: center;
     border-radius: 50px;
+
+    @media (max-width: 600px) {
+        width: 70%;
+    }
+
+    & h1 {
+        @media (max-width: 650px) {
+            font-size: 45px;
+        } 
+    }
 }
 
 .contact {

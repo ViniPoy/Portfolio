@@ -18,17 +18,37 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 60px;
 }
+@media (max-width: 650px) {
+  h1 {
+    font-size: 50px;
+  }
+}
 
 h2 {
   font-size: 50px;
+}
+@media (max-width: 650px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 h3 {
   font-size: 40px;
 }
+@media (max-width: 650px) {
+  h3 {
+    font-size: 30px;
+  }
+}
 
 p {
   font-size: 30px;
+}
+@media (max-width: 650px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 h1, h2, h3, h4, p {
@@ -180,7 +200,9 @@ header .outside__link {
 }
 @media (max-width: 922px) {
   .portfolio__filters {
-    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 }
 .portfolio__filters--button {
@@ -194,6 +216,8 @@ header .outside__link {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  width: -moz-max-content;
+  width: max-content;
 }
 .portfolio__filters--button:hover {
   background: rgba(255, 255, 255, 0);
@@ -202,6 +226,7 @@ header .outside__link {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
   scale: 1.1;
+  cursor: pointer;
 }
 .portfolio__filters--button-active {
   background: rgba(255, 255, 255, 0);
@@ -260,6 +285,13 @@ header .outside__link {
   display: flex;
   gap: 10px;
   justify-content: center;
+}
+@media (max-width: 922px) {
+  .portfolio__card--links-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 }
 .portfolio__card--link {
   text-decoration: none;
@@ -499,6 +531,12 @@ footer a {
   align-items: center;
   gap: 10px;
 }
+@media (max-width: 922px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .about {
   text-align: center;
@@ -507,6 +545,13 @@ footer a {
 .about ul {
   list-style-type: none;
   font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 650px) {
+  .about ul {
+    font-size: 15px;
+  }
 }
 .about__intro {
   background: rgba(255, 255, 255, 0);
@@ -518,9 +563,11 @@ footer a {
   border-radius: 50px;
   padding: 10px 50px;
 }
-.about__intro p {
-  width: 90%;
-  margin: 30px auto;
+@media (max-width: 650px) {
+  .about__intro {
+    width: 65%;
+    padding: 10px 30px;
+  }
 }
 .about__parcours {
   background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
@@ -540,13 +587,15 @@ footer a {
   border-radius: 50px;
   padding: 10px 50px;
 }
-.about__compétences p {
-  width: 90%;
-  margin: 30px auto;
+@media (max-width: 650px) {
+  .about__compétences {
+    width: 65%;
+  }
 }
 .about__why {
   background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
   border: 1px solid rgba(255, 255, 255, 0);
+  padding-bottom: 30px;
 }
 .about__why p {
   width: 80%;
@@ -580,4 +629,9 @@ footer a {
   transform: scale(1.1);
   background-color: #be1313;
   color: #f2f2f2;
+}
+@media (max-width: 650px) {
+  .about__contact {
+    width: 65%;
+  }
 }/*# sourceMappingURL=à-propos.css.map */

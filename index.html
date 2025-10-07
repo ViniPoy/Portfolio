@@ -92,7 +92,11 @@
         </header>
         <main>
             <section class="hero">
-                <img src="images/Logo.webp" alt="Logo de VL Dev Web">
+                <img src="images/Logo.webp"
+                    srcSet="images/Logo3.webp 200w, images/Logo2.webp 300w, images/Logo.webp 500w"
+                    sizes="(max-width: 450px) 200px, (max-width: 720px) 300px, 500px"
+                    alt="Logo de VL Dev Web"
+                >
                 <h1>Développeur web freelance <br/> Création de sites modernes et performants</h1>
                 <p>J’accompagne les entrepreneurs, associations et petites entreprises dans la création ou la refonte de sites web clairs, rapides et adaptés aux mobiles.</p>
                 <div class="hero__btn">
@@ -127,7 +131,7 @@
                 <div class="portfolio__gallery">
                     <div class="portfolio__card">
                         <img class="portfolio__card--image" src="images/eclatnumerique.webp" alt="image de la page d'accueil du site éclat numérique">
-                        <h3 class="portfolio__card--title">Site internet de Karine Thualt, community manager</h3>
+                        <h3 class="portfolio__card--title">Site internet de Karine Thuault, community manager</h3>
                         <p class="portfolio__card--description">Premier projet professionnel : site vitrine créé avec React, design responsive et référencement optimisé.</p>
                         <p class="portfolio__card--skills">React<br>SASS<br>Design responsive<br>SEO optimisé</p>
                         <a class="portfolio__card--link" href="https://eclatnumerique.fr" target="_blank" rel="noopener noreferrer">Visiter le Site</a>
@@ -146,27 +150,6 @@
                         <p class="portfolio__card--skills">API Express<br>MongoDB (NoSQL)<br>Mise en oeuvre d'opération CRUD<br>Sécurisation des utilisateur avec JSWBT</p>
                         <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-6-Backend.git" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
-                    <!-- <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Kasa2.webp" alt="Image de la page d'accueil de l'application web Kasa">
-                        <h3>Création une application web avec React</h3>
-                        <p class="portfolio__card--description">Ce projet me demandait de créer une application de location fictive avec React, ainsi que quelques animations avec SCSS</p>
-                        <p class="portfolio__card--skills">React<br>SCSS<br>Gestion de la navigation avec React Router</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-5-Kasa.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                    <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Sophie-Bluel2.webp" alt="image de la page d'accueil du site de Sophie Bluel">
-                        <h3>Rendre un site dynamique avec JS</h3>
-                        <p class="portfolio__card--description">Projet de formation consistant à créer un mode administrateur d'un site pour permettre l'ajout de projet depuis une modale dans l'interface utilisateur, et ce grâce à javscript</p>
-                        <p class="portfolio__card--skills">JavaScript<br>Récupération de données utilisateur<br>Gestion d'évènements<br>Manipulation du DOM</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-3-Sophie-Bluel.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                    <div class="portfolio__card">
-                        <img class="portfolio__card--image" src="images/Qwenta2.webp" alt="image de la page d'accueil de MenuMaker by Qwenta">
-                        <h3>Planification du développement D'un site web</h3>
-                        <p class="portfolio__card--description">Ce projet consistait à simuler la planification de développement d'un site web avec une méthodologie AGILE SCRUM</p>
-                        <p class="portfolio__card--skills">Création de tableau Kanban<br>Mise en place d'une veille technologique<br>Création de dossier de spécifications techniques<br>Gestion de projet AGILE avec méthode SCRUM</p>
-                        <a class="portfolio__card--link" href="https://github.com/ViniPoy/Projet-Qwenta.git" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div> -->
                 </div>
                 <a href="portfolio.html" class="portfolio__btn">Voir toute mes réalisations</a>
             </section>
