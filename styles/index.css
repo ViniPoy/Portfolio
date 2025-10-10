@@ -245,6 +245,7 @@ header .outside__link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   max-width: 450px;
   height: auto;
   padding: 10px;
@@ -615,18 +616,22 @@ footer a {
 }
 .prestas__gallery--card {
   width: 300px;
-  height: 400px;
+  height: 500px;
   padding: 20px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   background-color: rgba(20, 20, 20, 0.7);
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
+.prestas__gallery--card img {
+  border-radius: 40px;
+}
 .prestas__gallery--card h3 {
   font-size: 35px;
+  margin-bottom: 0;
 }
 .prestas__gallery--card p {
   font-size: 20px;
