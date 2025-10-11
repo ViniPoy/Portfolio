@@ -1,0 +1,15 @@
+@use 'variables' as *;
+@use 'global';
+
+.ml {
+    @include background-glass();
+    width: 80%;
+    margin: 50px auto;
+    padding: 0 30px;
+    border-radius: 50px;
+    color: $text-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}

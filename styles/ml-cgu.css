@@ -549,51 +549,18 @@ footer a {
   }
 }
 
-.intro {
+.ml {
   background: rgba(255, 255, 255, 0);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 80%;
   margin: 50px auto;
-  padding: 0 40px;
-  color: #f2f2f2;
-  text-align: center;
+  padding: 0 30px;
   border-radius: 50px;
-}
-@media (max-width: 600px) {
-  .intro {
-    width: 70%;
-  }
-}
-@media (max-width: 650px) {
-  .intro h1 {
-    font-size: 45px;
-  }
-}
-
-.contact {
-  background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
-  border: 1px solid rgba(255, 255, 255, 0);
+  color: #f2f2f2;
   text-align: center;
-  color: #f2f2f2;
-}
-.contact__btn {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #be1313;
-  border-radius: 30px;
-  border: none;
-  font-family: EB Garamond;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  background-color: #f2f2f2;
-  margin-bottom: 20px;
-}
-.contact__btn:hover {
-  transform: scale(1.1);
-  background-color: #be1313;
-  color: #f2f2f2;
-}/*# sourceMappingURL=prestation.css.map */
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}/*# sourceMappingURL=ml-cgu.css.map */
