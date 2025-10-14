@@ -72,7 +72,7 @@ header {
         padding: 0;
         cursor: pointer;
 
-        @media (max-width: 968px) {
+        @media (max-width: 1147px) {
             display: block;
         }
 
@@ -117,7 +117,7 @@ header {
         gap: 20px;
         z-index: 1000;
 
-        @media (max-width: 968px) {
+        @media (max-width: 1147px) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -230,6 +230,7 @@ header {
         justify-content: center;
         gap: 8%;
         flex-wrap: wrap;
+        @include appear-from-top-left(0.5s);
     }
 
     &__card {

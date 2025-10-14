@@ -42,6 +42,7 @@ function generateGallery(projectToShow) {
     projectToShow.forEach((card) => {
         generateProject(card);
     });
+    refreshGalleryAnimation();
     adminMode();
 }
 

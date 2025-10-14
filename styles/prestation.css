@@ -1,3 +1,14 @@
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: montserrat;
 }
@@ -73,7 +84,7 @@ header .burger {
   padding: 0;
   cursor: pointer;
 }
-@media (max-width: 968px) {
+@media (max-width: 1147px) {
   header .burger {
     display: block;
   }
@@ -112,7 +123,7 @@ header .inside {
   gap: 20px;
   z-index: 1000;
 }
-@media (max-width: 968px) {
+@media (max-width: 1147px) {
   header .inside {
     flex-direction: column;
     justify-content: center;
@@ -240,6 +251,13 @@ header .outside__link {
   justify-content: center;
   gap: 8%;
   flex-wrap: wrap;
+  transform: scale(0);
+  transform-origin: 100px 10px;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+.portfolio__gallery.visible {
+  transform: scale(1);
 }
 .portfolio__card {
   display: flex;
@@ -570,6 +588,83 @@ footer a {
   .intro h1 {
     font-size: 45px;
   }
+}
+
+.prestation {
+  text-align: center;
+  align-items: center;
+  color: #f2f2f2;
+}
+.prestation__gallery {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  flex-wrap: wrap;
+}
+.prestation__card {
+  transform: scale(0);
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 450px;
+  height: auto;
+  padding: 10px;
+  background-color: rgba(190, 19, 19, 0.5);
+  border-radius: 30px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.prestation__card.visible {
+  animation: scaleIn 0.6s ease-in-out 0s forwards;
+}
+.prestation__card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.prestation__card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.prestation__card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.prestation__card:nth-child(4) {
+  animation-delay: 0.1s;
+}
+.prestation__card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+@media (max-width: 999px) {
+  .prestation__card:nth-child(1), .prestation__card:nth-child(2), .prestation__card:nth-child(3), .prestation__card:nth-child(4), .prestation__card:nth-child(5) {
+    animation-delay: 0.1s;
+  }
+}
+.prestation__card:hover {
+  background-color: rgb(190, 19, 19);
+}
+.prestation__card--image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 30px;
+}
+.prestation__card--title {
+  font-size: 30px;
+}
+.prestation__card--description {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.prestation__card--skills {
+  font-weight: 600;
+  margin-bottom: 40px;
+  font-size: 20px;
 }
 
 .contact {

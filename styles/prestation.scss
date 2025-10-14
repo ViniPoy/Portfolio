@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'animation' as *;
 @use 'global';
 
 .intro {
@@ -19,6 +20,73 @@
         @media (max-width: 650px) {
             font-size: 45px;
         } 
+    }
+}
+
+.prestation {
+    text-align: center;
+    align-items: center;
+    color: $text-color;
+
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        gap: 8%;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        @include appear-scale();
+        &:nth-child(1) { animation-delay: 0.1s; }
+        &:nth-child(2) { animation-delay: 0.5s; }
+        &:nth-child(3) { animation-delay: 0.9s; }
+        &:nth-child(4) { animation-delay: 0.1s; }
+        &:nth-child(5) { animation-delay: 0.5s; }
+
+        @media (max-width: 999px) {
+            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) { animation-delay: 0.1s; }
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 450px;
+        height: auto;
+        padding: 10px;
+        background-color: $background-2;
+        border-radius: 30px;
+        margin-bottom: 50px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $background-3;
+        }
+
+        &--image {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 30px;
+        }
+
+        &--title {
+            font-size: 30px;
+        }
+
+        &--description {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+
+        &--skills {
+            font-weight: 600;
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
     }
 }
 

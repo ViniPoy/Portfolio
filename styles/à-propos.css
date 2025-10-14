@@ -74,7 +74,7 @@ header .burger {
   padding: 0;
   cursor: pointer;
 }
-@media (max-width: 968px) {
+@media (max-width: 1147px) {
   header .burger {
     display: block;
   }
@@ -113,7 +113,7 @@ header .inside {
   gap: 20px;
   z-index: 1000;
 }
-@media (max-width: 968px) {
+@media (max-width: 1147px) {
   header .inside {
     flex-direction: column;
     justify-content: center;
@@ -241,6 +241,13 @@ header .outside__link {
   justify-content: center;
   gap: 8%;
   flex-wrap: wrap;
+  transform: scale(0);
+  transform-origin: 100px 10px;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+.portfolio__gallery.visible {
+  transform: scale(1);
 }
 .portfolio__card {
   display: flex;

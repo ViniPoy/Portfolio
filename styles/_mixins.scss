@@ -33,3 +33,14 @@
         animation: scaleIn $duration $easing $delay forwards;
     }
 }
+
+@mixin appear-from-top-left($duration: 1s, $delay: 0s, $easing: ease-in-out) {
+    transform: scale(0);
+    transform-origin: 100px 10px;
+    will-change: transform;
+    transition: transform $duration $easing;
+
+    &.visible {
+        transform: scale(1);
+    }
+}

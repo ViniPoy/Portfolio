@@ -84,7 +84,7 @@ header .burger {
   padding: 0;
   cursor: pointer;
 }
-@media (max-width: 968px) {
+@media (max-width: 1147px) {
   header .burger {
     display: block;
   }
@@ -123,7 +123,7 @@ header .inside {
   gap: 20px;
   z-index: 1000;
 }
-@media (max-width: 968px) {
+@media (max-width: 1147px) {
   header .inside {
     flex-direction: column;
     justify-content: center;
@@ -251,6 +251,13 @@ header .outside__link {
   justify-content: center;
   gap: 8%;
   flex-wrap: wrap;
+  transform: scale(0);
+  transform-origin: 100px 10px;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+.portfolio__gallery.visible {
+  transform: scale(1);
 }
 .portfolio__card {
   display: flex;
@@ -650,6 +657,9 @@ footer a {
   gap: 5%;
 }
 .prestas__gallery--card {
+  transform: scale(0);
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
   width: 340px;
   height: 650px;
   padding: 20px;
@@ -660,9 +670,23 @@ footer a {
   background-color: rgba(190, 19, 19, 0.5);
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-  transform: scale(0);
-  transition: transform 0.6s ease-in-out;
-  will-change: transform;
+}
+.prestas__gallery--card.visible {
+  animation: scaleIn 0.6s ease-in-out 0s forwards;
+}
+.prestas__gallery--card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.prestas__gallery--card:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.prestas__gallery--card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+@media (max-width: 999px) {
+  .prestas__gallery--card:nth-child(1), .prestas__gallery--card:nth-child(2), .prestas__gallery--card:nth-child(3) {
+    animation-delay: 0.1s;
+  }
 }
 @media (max-width: 420px) {
   .prestas__gallery--card {
@@ -685,18 +709,6 @@ footer a {
 .prestas__gallery--card:hover {
   transform: scale(1.1);
   background-color: rgb(190, 19, 19);
-}
-.prestas__gallery--card.visible {
-  animation: scaleIn 0.6s ease-in-out 0s forwards;
-}
-.prestas__gallery--card:nth-child(1) {
-  animation-delay: 0.1s;
-}
-.prestas__gallery--card:nth-child(2) {
-  animation-delay: 0.5s;
-}
-.prestas__gallery--card:nth-child(3) {
-  animation-delay: 0.9s;
 }
 .prestas__cta {
   display: inline-block;
