@@ -3,7 +3,7 @@
     transform: scale(0);
   }
   70% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -19,6 +19,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
@@ -627,10 +628,27 @@ footer a {
 }
 
 .accroche {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
+  will-change: transform, opacity;
   background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
   border: 1px solid rgba(255, 255, 255, 0);
   color: #f2f2f2;
   text-align: center;
+}
+.accroche.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (max-width: 1500px) {
+  .accroche {
+    transform: translateY(0);
+    opacity: 1;
+    transition: none;
+  }
 }
 .accroche p {
   width: 80%;
@@ -682,6 +700,11 @@ footer a {
 }
 .prestas__gallery--card:nth-child(3) {
   animation-delay: 0.9s;
+}
+@media (max-width: 1583px) {
+  .prestas__gallery--card:nth-child(3) {
+    animation-delay: 0.1s;
+  }
 }
 @media (max-width: 999px) {
   .prestas__gallery--card:nth-child(1), .prestas__gallery--card:nth-child(2), .prestas__gallery--card:nth-child(3) {
@@ -774,10 +797,27 @@ ul {
 }
 
 .about {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
+  will-change: transform, opacity;
   background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
   border: 1px solid rgba(255, 255, 255, 0);
   color: #f2f2f2;
   text-align: center;
+}
+.about.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+@media (max-width: 1500px) {
+  .about {
+    transform: translateY(0);
+    opacity: 1;
+    transition: none;
+  }
 }
 .about h2 {
   padding-top: 40px;

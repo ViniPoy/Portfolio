@@ -2,7 +2,7 @@
 @use 'mixins' as *;
 @use 'global';
 
-.about {
+.a-propos {
     text-align: center;
     color: $text-color;
     
@@ -31,6 +31,7 @@
     }
 
     &__parcours {
+        @include slide-up(0.6s);
         @include background-gradient();
 
         & p {
@@ -52,6 +53,7 @@
     }
 
     &__why {
+        @include slide-up(0.6s);
         @include background-gradient();
         padding-bottom: 30px;
 

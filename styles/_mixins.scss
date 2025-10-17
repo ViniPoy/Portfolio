@@ -44,3 +44,23 @@
         transform: scale(1);
     }
 }
+
+@mixin slide-up($duration: 0.8s, $easing: ease-in-out, $delay: 0s) {
+    position: relative;
+    overflow: hidden;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform $duration $easing $delay, opacity $duration $easing $delay;
+    will-change: transform, opacity;
+
+    &.visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    @media (max-width: 1500px) {
+        transform: translateY(0);
+        opacity: 1;
+        transition: none;
+    }
+}
