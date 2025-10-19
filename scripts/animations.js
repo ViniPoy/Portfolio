@@ -38,7 +38,7 @@ function refreshGalleryAnimation() {
 animateOnScroll(".accroche", 0);
 animateOnScroll(".prestas__gallery--card", 0);
 animateOnScroll(".prestation__card", 0);
-animateOnScroll(".portfolio__gallery", 0.5);
+animateOnScroll(".portfolio__gallery", 1);
 animateOnScroll(".about", 0);
 animateOnScroll(".a-propos__why", 0);
 animateOnScroll(".a-propos__parcours", 0);
