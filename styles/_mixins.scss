@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 @mixin background-gradient {
-    background: linear-gradient(135deg, rgba(190, 19, 19), rgba(230, 40, 40));
+    background: radial-gradient(circle, #731018 60%, #071726 100%);
     border: 1px solid rgba(255, 255, 255, 0);
 }
 

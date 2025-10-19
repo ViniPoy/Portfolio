@@ -3,12 +3,14 @@
 }
 
 body {
-  background-image: url(../images/3601908.webp);
+  background-image: url(../images/Fond-1.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin: 0;
   overflow-x: hidden;
+  height: 100%;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -84,7 +86,7 @@ header .burger span {
   display: block;
   height: 3px;
   width: 100%;
-  background: #be1313;
+  background: #731018;
   border-radius: 3px;
   transition: all 0.3s ease-in-out;
 }
@@ -133,7 +135,7 @@ header .inside__link {
   text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
-  color: #be1313;
+  color: #731018;
   border-radius: 30px;
   border: none;
   font-family: EB Garamond;
@@ -143,7 +145,7 @@ header .inside__link {
   transition: all 0.3s ease-in-out;
 }
 header .inside__link:hover {
-  background-color: rgb(190, 19, 19);
+  background-color: rgb(115, 16, 24);
   color: #f2f2f2;
   transform: scale(1.1);
 }
@@ -168,7 +170,7 @@ header .outside {
   }
 }
 header .outside__link {
-  color: #be1313;
+  color: #731018;
   font-size: 200%;
   padding: 10px;
 }
@@ -208,7 +210,7 @@ header .outside__link {
 .portfolio__filters--button {
   display: inline-block;
   padding: 10px 20px;
-  color: #be1313;
+  color: #731018;
   border-radius: 30px;
   border: none;
   font-family: EB Garamond;
@@ -257,13 +259,13 @@ header .outside__link {
   max-width: 450px;
   height: auto;
   padding: 10px;
-  background-color: rgba(190, 19, 19, 0.5);
+  background-color: rgba(115, 16, 24, 0.5);
   border-radius: 30px;
   margin-bottom: 50px;
   transition: all 0.3s ease-in-out;
 }
 .portfolio__card:hover {
-  background-color: rgb(190, 19, 19);
+  background-color: rgb(115, 16, 24);
 }
 .portfolio__card--image {
   width: 100%;
@@ -309,14 +311,14 @@ header .outside__link {
   background-color: #f2f2f2;
   padding: 10px;
   border-radius: 30px;
-  color: #be1313;
+  color: #731018;
   font-family: EB Garamond;
   font-size: larger;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 }
 .portfolio__card--link:hover {
-  background: rgb(190, 19, 19);
+  background: rgb(115, 16, 24);
   color: #f2f2f2;
 }
 .portfolio__card .delete-btn, .portfolio__card .modify-btn {
@@ -326,7 +328,7 @@ header .outside__link {
 .portfolio__btn {
   display: inline-block;
   padding: 10px 20px;
-  color: #be1313;
+  color: #731018;
   border-radius: 30px;
   border: none;
   font-family: EB Garamond;
@@ -339,7 +341,7 @@ header .outside__link {
   transition: all 0.3s ease-in-out;
 }
 .portfolio__btn:hover {
-  background-color: #be1313;
+  background-color: #731018;
   color: #f2f2f2;
   transform: scale(1.1);
 }
@@ -410,7 +412,7 @@ header .outside__link {
   cursor: pointer;
 }
 .modal__section button:hover {
-  background-color: rgb(190, 19, 19);
+  background-color: rgb(115, 16, 24);
   color: #f2f2f2;
 }
 .modal__delete {
@@ -509,7 +511,7 @@ header .outside__link {
   gap: 15px;
 }
 .overlay__message--button {
-  background-color: #be1313;
+  background-color: #731018;
   padding: 8px 25px;
   border-radius: 20px;
   font-family: "Syne";
@@ -577,7 +579,7 @@ footer a {
   }
 }
 .contact__form-container {
-  background: linear-gradient(135deg, rgb(190, 19, 19), rgb(230, 40, 40));
+  background: radial-gradient(circle, #731018 60%, #071726 100%);
   border: 1px solid rgba(255, 255, 255, 0);
   padding: 30px;
 }
@@ -624,7 +626,7 @@ footer a {
 .contact__form--button {
   display: inline-block;
   padding: 10px 20px;
-  color: #be1313;
+  color: #731018;
   border-radius: 30px;
   border: none;
   font-family: EB Garamond;
@@ -640,7 +642,7 @@ footer a {
   cursor: pointer;
   transform: scale(1.1);
   color: #f2f2f2;
-  background-color: #be1313;
+  background-color: #731018;
 }
 .contact__direct {
   display: flex;
