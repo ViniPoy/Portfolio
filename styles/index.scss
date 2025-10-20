@@ -12,12 +12,6 @@
     color: $text-color;
     border-radius: 50px;
 
-    & h1 {
-         @media (max-width: 450px) {
-            font-size: 42px;
-        }
-    }
-
     & p {
         margin: 0 20px;
     }
@@ -161,8 +155,11 @@ ul {
     border-radius: 50px;
 
     & ul {
+        text-align: start;
+        margin-left: 5vw;
+
         @media (min-width: 650px) {
-           font-size: 25px;
+            font-size: 25px;
             line-height: 30px; 
         }  
     }

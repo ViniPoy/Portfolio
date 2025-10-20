@@ -40,7 +40,7 @@ h1 {
 }
 @media (max-width: 650px) {
   h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
 }
 
@@ -49,7 +49,7 @@ h2 {
 }
 @media (max-width: 650px) {
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -58,7 +58,7 @@ h3 {
 }
 @media (max-width: 650px) {
   h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -571,6 +571,7 @@ footer a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  padding-bottom: 15px;
 }
 @media (max-width: 922px) {
   footer {
@@ -590,11 +591,6 @@ footer a {
   text-align: center;
   color: #f2f2f2;
   border-radius: 50px;
-}
-@media (max-width: 450px) {
-  .hero h1 {
-    font-size: 42px;
-  }
 }
 .hero p {
   margin: 0 20px;
@@ -781,6 +777,10 @@ ul {
   text-align: center;
   color: #f2f2f2;
   border-radius: 50px;
+}
+.why ul {
+  text-align: start;
+  margin-left: 5vw;
 }
 @media (min-width: 650px) {
   .why ul {
