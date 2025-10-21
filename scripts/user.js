@@ -1,6 +1,6 @@
-const token = localStorage.getItem("token");
 
 function adminMode() {
+    const token = localStorage.getItem("token");
     if (!token) return;
 
     const divFilters = document.querySelector(".portfolio__filters");

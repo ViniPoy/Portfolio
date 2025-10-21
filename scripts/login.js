@@ -21,19 +21,35 @@ loginForm.addEventListener("submit", async (event) => {
     }
 })
 
-function buttonChange() {
+document.addEventListener("keydown", (event) => {
+    if (event.ctrlKey && event.key.toLowerCase() === "l") {
+        event.preventDefault();
+        handleLoginShortcut();
+    }
+})
+
+function handleLoginShortcut() {
     const token = localStorage.getItem("token");
     if (token) {
-        connectionButton.innerText = "Déconnexion";
-        connectionButton.addEventListener("click", () => {
-            localStorage.removeItem("token");
-            window.location.reload();
-        })
+        localStorage.removeItem("token");
+        updateHeaderState(false);
+        showMessage("Déconnecté !")
     } else {
-        connectionButton.addEventListener("click", () => {
-            openModal("login");
-        })
+        openModal("login");
     }
 }
 
-buttonChange();
+function updateHeaderState(isLoggedIn) {
+    const header = document.querySelector("header");
+    if (!header) return;
+    if (isLoggedIn) {
+        header.classList.add("logged");
+    } else {
+        header.classList.remove("logged");
+    }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const token = localStorage.getItem("token");
+    updateHeaderState(!!token)
+})
