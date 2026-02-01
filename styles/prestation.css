@@ -266,7 +266,6 @@ header.logged {
           backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
-  scale: 1.1;
   cursor: pointer;
 }
 .portfolio__filters--button-active {

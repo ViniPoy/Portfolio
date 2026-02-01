@@ -241,7 +241,6 @@ header {
             &:hover {
                 @include background-glass();
                 color: $text-color;
-                scale: 1.1;
                 cursor: pointer;
             }
         }
