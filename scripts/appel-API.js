@@ -5,6 +5,7 @@ async function getProject() {
 };
 
 async function postProject(data) {
+    const token = localStorage.getItem("token");
     try {
         const response = await fetch(`${API_URL}/portfolio`, {
             method: "POST",
@@ -14,6 +15,9 @@ async function postProject(data) {
         if (response.ok) {
             return await response.json();
         } else {
+            if (response.status === 401 || response.status === 403) {
+                console.error("Session expirée ou non autorisée");
+            }
             console.error("Erreur lors de l'envoi :", response.status);
             return null;
         }
