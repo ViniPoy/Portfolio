@@ -260,6 +260,7 @@ header.logged {
   transition: all 0.3s ease-in-out;
   width: -moz-max-content;
   width: max-content;
+  height: 55px;
 }
 .portfolio__filters--button:hover {
   background: rgba(255, 255, 255, 0);

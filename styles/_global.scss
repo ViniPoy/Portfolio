@@ -238,6 +238,7 @@ header {
         &--button {
             @include btn-cta();
             width: max-content;
+            height: 55px;
 
             &:hover {
                 @include background-glass();
