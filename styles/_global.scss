@@ -227,6 +227,7 @@ header {
         max-width: 50%;
         margin: auto;
         margin-bottom: 30px;
+        height: 60px;
 
         @media (max-width: 922px) {
             flex-direction: column;
@@ -248,7 +249,6 @@ header {
         &--button-active {
             @include background-glass();
             color: $text-color;
-            scale: 1.1;
         }
     }
 
