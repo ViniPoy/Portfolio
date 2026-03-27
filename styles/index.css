@@ -210,9 +210,15 @@ header .outside__link {
   font-size: 200%;
   padding: 10px;
 }
+header .outside__link svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
 @media (max-width: 436px) {
-  header .outside__link {
-    font-size: 170%;
+  header .outside__link svg {
+    width: 1em;
+    height: 1em;
   }
 }
 header.logged {
@@ -264,16 +270,14 @@ header.logged {
 }
 .portfolio__filters--button:hover {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
   cursor: pointer;
 }
 .portfolio__filters--button-active {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
 }
@@ -531,8 +535,7 @@ header.logged {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .overlay__message {
   background-color: white;
@@ -595,6 +598,17 @@ footer a {
   gap: 10px;
   padding-bottom: 10px;
 }
+footer a svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
+@media (max-width: 436px) {
+  footer a svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
 @media (max-width: 922px) {
   footer {
     flex-direction: column;
@@ -604,8 +618,7 @@ footer a {
 
 .hero {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 70%;
   margin: 50px auto;
@@ -613,6 +626,10 @@ footer a {
   text-align: center;
   color: #f2f2f2;
   border-radius: 50px;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
 }
 .hero p {
   margin: 0 20px;
@@ -663,10 +680,6 @@ footer a {
   opacity: 0;
   transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
   will-change: transform, opacity;
-  background: radial-gradient(circle, #731018 60%, #071726 100%);
-  border: 1px solid rgba(255, 255, 255, 0);
-  color: #f2f2f2;
-  text-align: center;
 }
 .accroche.visible {
   transform: translateY(0);
@@ -679,6 +692,12 @@ footer a {
     transition: none;
   }
 }
+.accroche {
+  background: radial-gradient(circle, #731018 60%, #071726 100%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: #f2f2f2;
+  text-align: center;
+}
 .accroche p {
   width: 80%;
   margin: 50px auto;
@@ -688,8 +707,7 @@ footer a {
   color: #f2f2f2;
   text-align: center;
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 80%;
   margin: 50px auto;
@@ -707,16 +725,6 @@ footer a {
   transform: scale(0);
   transition: transform 0.6s ease-in-out;
   will-change: transform;
-  width: 340px;
-  height: 650px;
-  padding: 20px;
-  margin: 40px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(115, 16, 24, 0.5);
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
 }
 .prestas__gallery--card.visible {
   animation: scaleIn 0.6s ease-in-out 0s forwards;
@@ -739,6 +747,18 @@ footer a {
   .prestas__gallery--card:nth-child(1), .prestas__gallery--card:nth-child(2), .prestas__gallery--card:nth-child(3) {
     animation-delay: 0.1s;
   }
+}
+.prestas__gallery--card {
+  width: 340px;
+  height: 650px;
+  padding: 20px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(115, 16, 24, 0.5);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 420px) {
   .prestas__gallery--card {
@@ -790,8 +810,7 @@ ul {
 
 .why {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 75%;
   margin: 50px auto;
@@ -836,10 +855,6 @@ ul {
   opacity: 0;
   transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
   will-change: transform, opacity;
-  background: radial-gradient(circle, #731018 60%, #071726 100%);
-  border: 1px solid rgba(255, 255, 255, 0);
-  color: #f2f2f2;
-  text-align: center;
 }
 .about.visible {
   transform: translateY(0);
@@ -851,6 +866,12 @@ ul {
     opacity: 1;
     transition: none;
   }
+}
+.about {
+  background: radial-gradient(circle, #731018 60%, #071726 100%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: #f2f2f2;
+  text-align: center;
 }
 .about h2 {
   padding-top: 40px;
@@ -882,8 +903,7 @@ ul {
 
 .contact {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
   width: 70%;

@@ -210,9 +210,15 @@ header .outside__link {
   font-size: 200%;
   padding: 10px;
 }
+header .outside__link svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
 @media (max-width: 436px) {
-  header .outside__link {
-    font-size: 170%;
+  header .outside__link svg {
+    width: 1em;
+    height: 1em;
   }
 }
 header.logged {
@@ -264,16 +270,14 @@ header.logged {
 }
 .portfolio__filters--button:hover {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
   cursor: pointer;
 }
 .portfolio__filters--button-active {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
 }
@@ -531,8 +535,7 @@ header.logged {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .overlay__message {
   background-color: white;
@@ -595,6 +598,17 @@ footer a {
   gap: 10px;
   padding-bottom: 10px;
 }
+footer a svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
+@media (max-width: 436px) {
+  footer a svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
 @media (max-width: 922px) {
   footer {
     flex-direction: column;
@@ -604,8 +618,7 @@ footer a {
 
 .intro {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 80%;
   margin: 50px auto;
@@ -640,16 +653,6 @@ footer a {
   transform: scale(0);
   transition: transform 0.6s ease-in-out;
   will-change: transform;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 450px;
-  height: auto;
-  background-color: rgba(115, 16, 24, 0.5);
-  border-radius: 30px;
-  margin-bottom: 50px;
-  transition: all 0.3s ease-in-out;
 }
 .prestation__card.visible {
   animation: scaleIn 0.6s ease-in-out 0s forwards;
@@ -681,6 +684,18 @@ footer a {
   .prestation__card:nth-child(1), .prestation__card:nth-child(2), .prestation__card:nth-child(3), .prestation__card:nth-child(4), .prestation__card:nth-child(5) {
     animation-delay: 0.1s;
   }
+}
+.prestation__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 450px;
+  height: auto;
+  background-color: rgba(115, 16, 24, 0.5);
+  border-radius: 30px;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out;
 }
 .prestation__card:hover {
   background-color: rgb(115, 16, 24);

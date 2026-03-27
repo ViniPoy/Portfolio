@@ -211,9 +211,15 @@ header .outside__link {
   font-size: 200%;
   padding: 10px;
 }
+header .outside__link svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
 @media (max-width: 436px) {
-  header .outside__link {
-    font-size: 170%;
+  header .outside__link svg {
+    width: 1em;
+    height: 1em;
   }
 }
 header.logged {
@@ -265,16 +271,14 @@ header.logged {
 }
 .portfolio__filters--button:hover {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
   cursor: pointer;
 }
 .portfolio__filters--button-active {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #f2f2f2;
 }
@@ -532,8 +536,7 @@ header.logged {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .overlay__message {
   background-color: white;
@@ -596,6 +599,17 @@ footer a {
   gap: 10px;
   padding-bottom: 10px;
 }
+footer a svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: currentColor;
+}
+@media (max-width: 436px) {
+  footer a svg {
+    width: 1.2em;
+    height: 1.2em;
+  }
+}
 @media (max-width: 922px) {
   footer {
     flex-direction: column;
@@ -620,8 +634,7 @@ footer a {
 }
 .a-propos__intro {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 70%;
   margin: 50px auto;
@@ -641,8 +654,6 @@ footer a {
   opacity: 0;
   transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
   will-change: transform, opacity;
-  background: radial-gradient(circle, #731018 60%, #071726 100%);
-  border: 1px solid rgba(255, 255, 255, 0);
 }
 .a-propos__parcours.visible {
   transform: translateY(0);
@@ -655,14 +666,17 @@ footer a {
     transition: none;
   }
 }
+.a-propos__parcours {
+  background: radial-gradient(circle, #731018 60%, #071726 100%);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
 .a-propos__parcours p {
   width: 80%;
   margin: 30px auto;
 }
 .a-propos__compétences {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 70%;
   margin: 50px auto;
@@ -681,9 +695,6 @@ footer a {
   opacity: 0;
   transition: transform 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
   will-change: transform, opacity;
-  background: radial-gradient(circle, #731018 60%, #071726 100%);
-  border: 1px solid rgba(255, 255, 255, 0);
-  padding-bottom: 30px;
 }
 .a-propos__why.visible {
   transform: translateY(0);
@@ -696,14 +707,18 @@ footer a {
     transition: none;
   }
 }
+.a-propos__why {
+  background: radial-gradient(circle, #731018 60%, #071726 100%);
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding-bottom: 30px;
+}
 .a-propos__why p {
   width: 80%;
   margin: 30px auto;
 }
 .a-propos__contact {
   background: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 70%;
   margin: 50px auto;

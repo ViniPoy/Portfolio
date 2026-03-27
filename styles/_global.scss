@@ -194,8 +194,19 @@ header {
             font-size: 200%;
             padding: 10px;
 
-            @media(max-width: 436px) {
-                font-size: 170%;
+            svg {
+                // Remplace le font-size: 200%
+                width: 1.5em;  
+                height: 1.5em; 
+                
+                // Permet d'utiliser la propriété 'color' du parent
+                fill: currentColor; 
+                
+                @media(max-width: 436px) {
+                    // Remplace le font-size: 170%
+                    width: 1em;
+                    height: 1em;
+                }
             }
         }
 
@@ -591,6 +602,21 @@ footer {
         align-items: center;
         gap: 10px;
         padding-bottom: 10px;
+
+        svg {
+            // Remplace le font-size: 200%
+            width: 1.5em;  
+            height: 1.5em; 
+            
+            // Permet d'utiliser la propriété 'color' du parent
+            fill: currentColor; 
+            
+            @media(max-width: 436px) {
+                // Remplace le font-size: 170%
+                width: 1.2em;
+                height: 1.2em;
+            }
+        }
     }
 
     @media (max-width: 922px) {

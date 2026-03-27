@@ -12,6 +12,11 @@
     color: $text-color;
     border-radius: 50px;
 
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+
     & p {
         margin: 0 20px;
     }
